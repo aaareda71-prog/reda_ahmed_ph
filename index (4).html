@@ -1,0 +1,2575 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="scroll-smooth"><head><script data-bard-client-injected="true">(function(firebaseConfig, initialAuthToken, appId) {
+        window.__firebase_config = firebaseConfig;
+        window.__initial_auth_token = initialAuthToken;
+        window.__app_id = appId;
+            })("\n{\n  \"apiKey\": \"AIzaSyCqyCcs2R2e7AegGjvFAwG98wlamtbHvZY\",\n  \"authDomain\": \"bard-frontend.firebaseapp.com\",\n  \"projectId\": \"bard-frontend\",\n  \"storageBucket\": \"bard-frontend.firebasestorage.app\",\n  \"messagingSenderId\": \"175205271074\",\n  \"appId\": \"1:175205271074:web:2b7bd4d34d33bf38e6ec7b\"\n}\n","eyJhbGciOiJSUzI1NiIsImtpZCI6IjExNjRiNzdiNDMzZDdhMDAyMWI4NjE4YjhjYTU3ZTMyZGI5MWUxMTMiLCJ0eXAiOiJKV1QifQ.eyJzdWIiOiJmaXJlYmFzZS1hZG1pbnNkay1mYnN2Y0BiYXJkLWZyb250ZW5kLmlhbS5nc2VydmljZWFjY291bnQuY29tIiwiYXVkIjoiaHR0cHM6Ly9pZGVudGl0eXRvb2xraXQuZ29vZ2xlYXBpcy5jb20vZ29vZ2xlLmlkZW50aXR5LmlkZW50aXR5dG9vbGtpdC52MS5JZGVudGl0eVRvb2xraXQiLCJ1aWQiOiIxNTI1NzIzNDY4ODAyNzkxMzE3MiIsImlzcyI6ImZpcmViYXNlLWFkbWluc2RrLWZic3ZjQGJhcmQtZnJvbnRlbmQuaWFtLmdzZXJ2aWNlYWNjb3VudC5jb20iLCJjbGFpbXMiOnsiYXBwSWQiOiI5Yzc2YzMxMWNjYWRlNmFjNGRhYjI2ODg4ZmQ0NzVjMi1pbmRleC5odG1sLTY0OCJ9LCJleHAiOjE3OTU1ODE3MzksImlhdCI6MTc5NTU3ODEzOSwiYWxnIjoiUlMyNTYifQ.cDoKB2LGp3xrEfoOvJNzBq36BBcyAoKNYiQeX8TtDsWwlzTzLwzAjv6Tl-D-GIjgNKZVHix0mxGIHbyysSnKzv72HfKUmjk704GgDLfpa9SKVMrSx6QZj0e2KBDmGBcvf43vYyr_ybTBZxzwQiZ-C6yBawOgB0pLLnfjSnF7n2mCLFv0Hc9lKKOgf-UE35AVKjBoGuz0oi4h-ukMipi1vSVROgYU5JV2eckKcThruPjj5Nt3j6FP_rkg86FYwVSVt6o6skvUVwH3GCUXzQrYurpFUliW0zMOXAJ_uDXuJ9o7Kr4ZIasWtWhm_FdcBCBWwQNb6IOzCe0RbexyH0eFhg","9c76c311ccade6ac4dab26888fd475c2-index.html-648")</script><script data-bard-client-injected="true">
+  document.addEventListener('input', (event) => {
+    if (event.target && (event.target.isContentEditable || event.target.hasAttribute('contenteditable'))) {
+      const clonedDoc = document.cloneNode(true);
+      const injectedScripts = clonedDoc.querySelectorAll('[data-bard-client-injected="true"]');
+      injectedScripts.forEach(el => el.remove());
+      window.parent.postMessage({
+        type: 'inlineEdit',
+        html: '<!DOCTYPE html>\n' + clonedDoc.documentElement.outerHTML
+      }, '*');
+    }
+  });
+</script><script data-bard-client-injected="true">(function(){'use strict';window.addEventListener("message",a=>{a.data&&a.data.type==="SUPPLEMENTAL_DATA_UPDATE"&&window.dispatchEvent(new CustomEvent("supplementaldataupdate",{detail:a.data.data}))});}).call(this);
+</script><script data-bard-client-injected="true">(function(){'use strict';var k=typeof Object.defineProperties=="function"?Object.defineProperty:function(a,b,d){if(a==Array.prototype||a==Object.prototype)return a;a[b]=d.value;return a};function m(a){a=["object"==typeof globalThis&&globalThis,a,"object"==typeof window&&window,"object"==typeof self&&self,"object"==typeof global&&global];for(var b=0;b<a.length;++b){var d=a[b];if(d&&d.Math==Math)return d}throw Error("Cannot find global object");}var q=m(this);
+function r(a,b){if(b)a:{var d=q;a=a.split(".");for(var c=0;c<a.length-1;c++){var e=a[c];if(!(e in d))break a;d=d[e]}a=a[a.length-1];c=d[a];b=b(c);b!=c&&b!=null&&k(d,a,{configurable:!0,writable:!0,value:b})}}function t(a){function b(c){return a.next(c)}function d(c){return a.throw(c)}return new Promise(function(c,e){function f(g){g.done?c(g.value):Promise.resolve(g.value).then(b,d).then(f,e)}f(a.next())})}function u(a){return t(a())}
+r("Object.values",function(a){return a?a:function(b){var d=[],c;for(c in b)Object.prototype.hasOwnProperty.call(b,c)&&d.push(b[c]);return d}});r("Array.prototype.includes",function(a){return a?a:function(b,d){var c=this;c instanceof String&&(c=String(c));var e=c.length;d=d||0;for(d<0&&(d=Math.max(d+e,0));d<e;d++){var f=c[d];if(f===b||Object.is(f,b))return!0}return!1}});/*
+
+ MIT License
+
+ Copyright (c) 2017-2023 W.Y.
+
+ Permission is hereby granted, free of charge, to any person obtaining a copy
+ of this software and associated documentation files (the "Software"), to deal
+ in the Software without restriction, including without limitation the rights
+ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ copies of the Software, and to permit persons to whom the Software is
+ furnished to do so, subject to the following conditions:
+
+ The above copyright notice and this permission notice shall be included in
+ all copies or substantial portions of the Software.
+
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ SOFTWARE.
+
+*/
+function v(a,b){var d=a.style;b.backgroundColor&&(d.backgroundColor=b.backgroundColor);b.width&&(d.width=`${b.width}px`);b.height&&(d.height=`${b.height}px`);var c=b.style;c!=null&&Object.keys(c).forEach(e=>{d[e]=c[e]})};var aa=(()=>{var a=0;return()=>{a+=1;return`u${`0000${(Math.random()*1679616<<0).toString(36)}`.slice(-4)}${a}`}})();function w(a){var b=[];for(let d=0,c=a.length;d<c;d++)b.push(a[d]);return b}let y=null;function z(a={}){return y?y:a.u?y=a.u:y=w(window.getComputedStyle(document.documentElement))}function A(a,b){return(a=(a.ownerDocument.defaultView||window).getComputedStyle(a).getPropertyValue(b))?parseFloat(a.replace("px","")):0}
+function B(a,b={}){var d;if(!(d=b.width)){d=A(a,"border-left-width");var c=A(a,"border-right-width");d=a.clientWidth+d+c}(b=b.height)||(b=A(a,"border-top-width"),c=A(a,"border-bottom-width"),b=a.clientHeight+b+c);return{width:d,height:b}}function C(a){return new Promise((b,d)=>{var c=new Image;c.onload=()=>{c.decode().then(()=>{requestAnimationFrame(()=>b(c))})};c.onerror=d;c.crossOrigin="anonymous";c.decoding="async";c.src=a})}
+function ba(a){return u(function*(){return Promise.resolve().then(()=>(new XMLSerializer).serializeToString(a)).then(encodeURIComponent).then(b=>`data:image/svg+xml;charset=utf-8,${b}`)})}
+function ca(a,b,d){return u(function*(){var c=document.createElementNS("http://www.w3.org/2000/svg","svg"),e=document.createElementNS("http://www.w3.org/2000/svg","foreignObject");c.setAttribute("width",`${b}`);c.setAttribute("height",`${d}`);c.setAttribute("viewBox",`0 0 ${b} ${d}`);e.setAttribute("width","100%");e.setAttribute("height","100%");e.setAttribute("x","0");e.setAttribute("y","0");e.setAttribute("externalResourcesRequired","true");c.appendChild(e);e.appendChild(a);return ba(c)})}
+var D=(a,b)=>{if(a instanceof b)return!0;a=Object.getPrototypeOf(a);return a===null?!1:a.constructor.name===b.name||D(a,b)};function da(a,b){return z(b).map(d=>{var c=a.getPropertyValue(d),e=a.getPropertyPriority(d);return`${d}: ${c}${e?" !important":""};`}).join(" ")}
+function E(a,b,d,c){a=window.getComputedStyle(a,d);var e=a.getPropertyValue("content");if(e!==""&&e!=="none"){var f=aa();try{b.className=`${b.className} ${f}`}catch(h){return}e=document.createElement("style");var g=e.appendChild;d=`.${f}:${d}`;a.cssText?(c=a.getPropertyValue("content"),c=`${a.cssText} content: '${c.replace(/'|"/g,"")}';`):c=da(a,c);g.call(e,document.createTextNode(`${d}{${c}}`));b.appendChild(e)}};function F(a){return a.search(/^(data:)/)!==-1}function G(a,b,d){return u(function*(){var c=yield fetch(a,b);if(c.status===404)throw Error(`Resource "${c.url}" not found`);var e=yield c.blob();return new Promise((f,g)=>{var h=new FileReader;h.onerror=g;h.onloadend=()=>{try{f(d({v:c,result:h.result}))}catch(l){g(l)}};h.readAsDataURL(e)})})}const H={};function ea(a,b,d){var c=a.replace(/\?.*/,"");d&&(c=a);/ttf|otf|eot|woff2?/i.test(c)&&(c=c.replace(/.*\//,""));return b?`[${b}]${c}`:c}
+function I(a,b,d){return u(function*(){var c=ea(a,b,d.F);if(H[c]!=null)return H[c];d.B&&(a+=(/\?/.test(a)?"&":"?")+(new Date).getTime());try{let f=yield G(a,d.l,({v:g,result:h})=>{b||(b=g.headers.get("Content-Type")||"");return h.split(/,/)[1]});var e=`data:${b};base64,${f}`}catch(f){e=d.o||""}return H[c]=e})};const J={R:"application/font-woff",S:"application/font-woff",O:"application/font-truetype",C:"application/vnd.ms-fontobject",J:"image/png",H:"image/jpeg",G:"image/jpeg",D:"image/gif",N:"image/tiff",M:"image/svg+xml",P:"image/webp"};function K(a){return(a=/\.([^./]*?)$/g.exec(a))?a[1]:""};function fa(a){return u(function*(){var b=a.toDataURL();return b==="data:,"?a.cloneNode(!1):C(b)})}function ha(a,b){return u(function*(){if(a.currentSrc){var d=document.createElement("canvas");let c=d.getContext("2d");d.width=a.clientWidth;d.height=a.clientHeight;c==null||c.drawImage(a,0,0,d.width,d.height);d=d.toDataURL();return C(d)}d=a.poster;d=yield I(d,J[K(d).toLowerCase()]||"",b);return C(d)})}
+function ia(a,b){return u(function*(){try{let d;if(a==null?0:(d=a.contentDocument)==null?0:d.body)return yield L(a.contentDocument.body,b,!0)}catch(d){}return a.cloneNode(!1)})}function ja(a,b){return u(function*(){return D(a,HTMLCanvasElement)?fa(a):D(a,HTMLVideoElement)?ha(a,b):D(a,HTMLIFrameElement)?ia(a,b):a.cloneNode(a.tagName!=null&&a.tagName.toUpperCase()==="SVG")})}
+function ka(a,b,d){return u(function*(){if(b.tagName!=null&&b.tagName.toUpperCase()==="SVG")return b;var c=[];if(a.tagName!=null&&a.tagName.toUpperCase()==="SLOT"&&a.assignedNodes)c=w(a.assignedNodes());else{let e;if(D(a,HTMLIFrameElement)&&((e=a.contentDocument)==null?0:e.body))c=w(a.contentDocument.body.childNodes);else{let f;c=w(((f=a.shadowRoot)!=null?f:a).childNodes)}}if(c.length===0||D(a,HTMLVideoElement))return b;yield c.reduce((e,f)=>e.then(()=>L(f,d)).then(g=>{g&&b.appendChild(g)}),Promise.resolve());
+return b})}function la(a,b,d){var c=b.style;if(c){var e=window.getComputedStyle(a);e.cssText?(c.cssText=e.cssText,c.transformOrigin=e.transformOrigin):z(d).forEach(f=>{var g=e.getPropertyValue(f);f==="font-size"&&g.endsWith("px")&&(g=`${Math.floor(parseFloat(g.substring(0,g.length-2)))-.1}px`);D(a,HTMLIFrameElement)&&f==="display"&&g==="inline"&&(g="block");f==="d"&&b.getAttribute("d")&&(g=`path(${b.getAttribute("d")})`);c.setProperty(f,g,e.getPropertyPriority(f))})}}
+function ma(a,b){D(a,HTMLSelectElement)&&(b=Array.from(b.children).find(d=>a.value===d.getAttribute("value")))&&b.setAttribute("selected","")}
+function na(a,b){return u(function*(){var d=a.querySelectorAll?a.querySelectorAll("use"):[];if(d.length===0)return a;var c={};for(var e=0;e<d.length;e++){var f=d[e].getAttribute("xlink:href");if(f){let g=document.querySelector(f);a.querySelector(f)||!g||c[f]||(c[f]=yield L(g,b,!0))}}d=Object.values(c);if(d.length){c=document.createElementNS("http://www.w3.org/1999/xhtml","svg");c.setAttribute("xmlns","http://www.w3.org/1999/xhtml");c.style.position="absolute";c.style.width="0";c.style.height="0";
+c.style.overflow="hidden";c.style.display="none";e=document.createElementNS("http://www.w3.org/1999/xhtml","defs");c.appendChild(e);for(f=0;f<d.length;f++)e.appendChild(d[f]);a.appendChild(c)}return a})}
+function L(a,b,d){return u(function*(){return d||!b.filter||b.filter(a)?Promise.resolve(a).then(c=>ja(c,b)).then(c=>ka(a,c,b)).then(c=>{D(c,Element)&&(la(a,c,b),E(a,c,":before",b),E(a,c,":after",b),D(a,HTMLTextAreaElement)&&(c.textContent=a.value),D(a,HTMLInputElement)&&c.setAttribute("value",a.value),ma(a,c));return c}).then(c=>na(c,b)):null})};const M=/url\((['"]?)([^'"]+?)\1\)/g,oa=/url\([^)]+\)\s*format\((["']?)([^"']+)\1\)/g,pa=/src:\s*(?:url\([^)]+\)\s*format\([^)]+\)[,;]\s*)+/g;function qa(a){var b=[];a.replace(M,(d,c,e)=>{b.push(e);return d});return b.filter(d=>!F(d))}
+function ra(a,b,d,c){return u(function*(){try{let e=d?(new URL(b,d||void 0)).toString():b,f;f=yield I(e,J[K(b).toLowerCase()]||"",c);return a.replace(new RegExp(`(url\\(['"]?)(${b.replace(/([.*+?^${}()|\[\]\/\\])/g,"\\$1")})(['"]?\\))`,"g"),`$1${f}$3`)}catch(e){}return a})}function sa(a,{K:b}){return b?a.replace(pa,d=>{for(;;){let [c,,e]=oa.exec(d)||[];if(!e)return"";if(e===b)return`src: ${c};`}}):a}
+function N(a,b,d){return u(function*(){if(a.search(M)===-1)return a;var c=sa(a,d);return qa(c).reduce((e,f)=>e.then(g=>ra(g,f,b,d)),Promise.resolve(c))})};function O(a,b,d){return u(function*(){var c,e=(c=b.style)==null?void 0:c.getPropertyValue(a);return e?(c=yield N(e,null,d),b.style.setProperty(a,c,b.style.getPropertyPriority(a)),!0):!1})}function ta(a,b){return u(function*(){(yield O("background",a,b))||(yield O("background-image",a,b));(yield O("mask",a,b))||(yield O("-webkit-mask",a,b))||(yield O("mask-image",a,b))||(yield O("-webkit-mask-image",a,b))})}
+function ua(a,b){return u(function*(){var d=D(a,HTMLImageElement);if(d&&!F(a.src)||D(a,SVGImageElement)&&!F(a.href.baseVal)){var c=d?a.src:a.href.baseVal,e=yield I(c,J[K(c).toLowerCase()]||"",b);yield new Promise((f,g)=>{a.onload=f;a.onerror=b.h?(...h)=>{try{f(b.h(...h))}catch(l){g(l)}}:g;a.decode&&(a.decode=f);a.loading==="lazy"&&(a.loading="eager");d?(a.srcset="",a.src=e):a.href.baseVal=e})}})}
+function va(a,b){return u(function*(){var d=w(a.childNodes).map(c=>P(c,b));yield Promise.all(d).then(()=>a)})}function P(a,b){return u(function*(){D(a,Element)&&(yield ta(a,b),yield ua(a,b),yield va(a,b))})};const Q={};function R(a){return u(function*(){var b=Q[a];if(b!=null)return b;b=yield(yield fetch(a)).text();b={url:a,cssText:b};return Q[a]=b})}function S(a,b){return u(function*(){var d=a.cssText,c=/url\(["']?([^"')]+)["']?\)/g,e=(d.match(/url\([^)]+\)/g)||[]).map(f=>u(function*(){var g=f.replace(c,"$1");g.startsWith("https://")||(g=(new URL(g,a.url)).href);return G(g,b.l,({result:h})=>{d=d.replace(f,`url(${h})`);return[f,h]})}));return Promise.all(e).then(()=>d)})}
+function T(a){if(a==null)return[];var b=[];a=a.replace(/(\/\*[\s\S]*?\*\/)/gi,"");for(var d=RegExp("((@.*?keyframes [\\s\\S]*?){([\\s\\S]*?}\\s*?)})","gi");;){var c=d.exec(a);if(c===null)break;b.push(c[0])}a=a.replace(d,"");d=/@import[\s\S]*?url\([^)]*\)[\s\S]*?;/gi;for(c=RegExp("((\\s*?(?:\\/\\*[\\s\\S]*?\\*\\/)?\\s*?@media[\\s\\S]*?){([\\s\\S]*?)}\\s*?})|(([\\s\\S]*?){([\\s\\S]*?)})","gi");;){let e=d.exec(a);if(e===null)if(e=c.exec(a),e===null)break;else d.lastIndex=c.lastIndex;else c.lastIndex=
+d.lastIndex;b.push(e[0])}return b}
+function wa(a,b){return u(function*(){var d=[],c=[];a.forEach(e=>{if("cssRules"in e)try{w(e.cssRules||[]).forEach((f,g)=>{if(f.type===CSSRule.IMPORT_RULE){let h=g+1;f=R(f.href).then(l=>S(l,b)).then(l=>T(l).forEach(p=>{try{e.insertRule(p,p.startsWith("@import")?h+=1:e.cssRules.length)}catch(x){}})).catch(()=>{});c.push(f)}})}catch(f){let g=a.find(h=>h.href==null)||document.styleSheets[0];e.href!=null&&c.push(R(e.href).then(h=>S(h,b)).then(h=>T(h).forEach(l=>{g.insertRule(l,g.cssRules.length)})).catch(()=>
+{}))}});return Promise.all(c).then(()=>{a.forEach(e=>{if("cssRules"in e)try{w(e.cssRules||[]).forEach(f=>{d.push(f)})}catch(f){}});return d})})}function xa(a){return a.filter(b=>b.type===CSSRule.FONT_FACE_RULE).filter(b=>b.style.getPropertyValue("src").search(M)!==-1)}function ya(a,b){return u(function*(){if(a.ownerDocument==null)throw Error("Provided element is not within a Document");var d=yield wa(w(a.ownerDocument.styleSheets),b);return xa(d)})}
+function za(a){function b(c){(c.style.fontFamily||getComputedStyle(c).fontFamily).split(",").forEach(e=>{d.add(e.trim().replace(/["']/g,""))});Array.from(c.children).forEach(e=>{e instanceof HTMLElement&&b(e)})}var d=new Set;b(a);return d}function Aa(a,b){return u(function*(){var d=yield ya(a,b),c=za(a);return(yield Promise.all(d.filter(e=>c.has(e.style.fontFamily.trim().replace(/["']/g,""))).map(e=>N(e.cssText,e.parentStyleSheet?e.parentStyleSheet.href:null,b)))).join("\n")})}
+function Ba(a,b){return u(function*(){var d=b.m!=null?b.m:b.A?null:yield Aa(a,b);if(d){let c=document.createElement("style");c.appendChild(document.createTextNode(d));a.firstChild?a.insertBefore(c,a.firstChild):a.appendChild(c)}})};function Ca(a,b={}){return u(function*(){var {width:d,height:c}=B(a,b),e=yield L(a,b,!0);yield Ba(e,b);yield P(e,b);v(e,b);return yield ca(e,d,c)})}
+function Da(a,b={}){return u(function*(){var {width:d,height:c}=B(a,b),e=yield Ca(a,b);e=yield C(e);var f=document.createElement("canvas"),g=f.getContext("2d"),h=b.I||window.devicePixelRatio||1,l=b.j||d,p=b.i||c;f.width=l*h;f.height=p*h;!b.L&&(f.width>16384||f.height>16384)&&(f.width>16384&&f.height>16384?f.width>f.height?(f.height*=16384/f.width,f.width=16384):(f.width*=16384/f.height,f.height=16384):f.width>16384?(f.height*=16384/f.width,f.width=16384):(f.width*=16384/f.height,f.height=16384));
+f.style.width=`${l}`;f.style.height=`${p}`;b.backgroundColor&&(g.fillStyle=b.backgroundColor,g.fillRect(0,0,f.width,f.height));g.drawImage(e,0,0,f.width,f.height);return f})}function Ea(a,b={}){return u(function*(){return(yield Da(a,b)).toDataURL()})};const Fa=["gemini.google.com","corp.google.com","proxy.googlers.com"];function V(a){a=Number(a.replace(/px$/,""));return Number.isFinite(a)?a:0}function W(){return document.body.querySelectorAll('[class*="animate"]').length>0}function X(a,b){var d=document.createElement("canvas");d.width=a;d.height=b;return d.toDataURL("image/png")}const Y=X(1,1);
+function Z(a,b){return u(function*(){var d=Math.max(b?b.width:a.offsetWidth,1),c=Math.max(b?b.height:a.offsetHeight,1),e=HTMLCanvasElement.prototype.toDataURL;b&&(HTMLCanvasElement.prototype.toDataURL=function(f,g){var h;if(h=this.isConnected&&a.contains(this)){{let n=this.getBoundingClientRect();if(n.width===0||n.height===0)h=!1;else if(window.getComputedStyle(this).position==="fixed")h=n.bottom>0&&n.top<b.height&&n.right>0&&n.left<b.width;else{h=a.getBoundingClientRect();var l=n.top-h.top,p=n.left-
+h.left,x=n.right-h.left;h=n.bottom-h.top>b.scrollTop&&l<b.scrollTop+b.height&&x>b.scrollLeft&&p<b.scrollLeft+b.width}}h=!h}return h?"data:,":e.call(this,f,g)});try{let f=window.getComputedStyle(a),g=b?`${V(f.marginTop)-b.scrollTop}px`:void 0,h=b?`${V(f.marginLeft)-b.scrollLeft}px`:void 0,l=`${Math.max(a.offsetWidth,d)}px`,p,x=`${Math.max(a.offsetHeight,c+((p=b==null?void 0:b.scrollTop)!=null?p:0))}px`;return yield Ea(a,Object.assign({},{width:d,height:c,j:d,i:c},b?{style:{width:l,height:x,marginTop:g,
+marginLeft:h,marginBlockStart:g,marginInlineStart:h}}:{},{A:!0,filter:n=>{if(n.tagName==="IMG"){let U=n.getAttribute("src");if(!U||U.trim()===""||n.style.display==="none")return!1}return!0},o:Y,h:()=>Y}))}catch(f){return X(d,c)}finally{HTMLCanvasElement.prototype.toDataURL=e}})}
+function Ga(){return u(function*(){var a=document.body.offsetWidth,b=document.body.offsetHeight,d=document.body.cloneNode(!0);d.querySelectorAll('[class*="animate"]').forEach(c=>{c.classList.remove(...Array.from(c.classList).filter(e=>e.startsWith("animate")))});d.style.width=`${a}px`;d.style.height=`${b}px`;return d})}
+function Ha(a){return u(function*(){var b={width:window.innerWidth||document.documentElement.clientWidth||document.body.offsetWidth,height:window.innerHeight||document.documentElement.clientHeight||document.body.offsetHeight,scrollTop:window.scrollY||document.documentElement.scrollTop||document.body.scrollTop||0,scrollLeft:window.scrollX||document.documentElement.scrollLeft||document.body.scrollLeft||0},d=document.body;if(W()){let c=yield Ga();d=c;document.body.appendChild(c)}b=yield Z(d,b);W()&&
+document.body.removeChild(d);window.parent.postMessage({type:"SEND_SCREENSHOT",image:b,topOffset:0},a.origin)})}function Ia(a){return u(function*(){var b={type:"SEND_SCREENSHOT_FOR_DATA_VISUALIZATION",image:yield Z(document.body),topOffset:0};window.parent.postMessage(b,a.origin)})}window.addEventListener("message",a=>u(function*(){if(Fa.some(d=>a.origin.includes(d))){var b=a.data;b&&(b.type==="MAKE_SCREENSHOT"&&(yield Ha(a)),b.type==="MAKE_SCREENSHOT_FOR_DATA_VISUALIZATION"&&(yield Ia(a)))}}));
+})();</script><script data-bard-client-injected="true">(function() {
+  // Ensure this script is executed only once
+  if (window.firebaseAuthBridgeScriptLoaded) {
+    return;
+  }
+  window.firebaseAuthBridgeScriptLoaded = true;
+
+  let nextTokenPromiseId = 0;
+
+  // Stores { resolve, reject } for ongoing token requests
+  const pendingTokenPromises = {};
+
+  // Listen for messages from the Host Application
+  window.addEventListener('message', function(event) {
+
+    const messageData = event.data;
+
+  if (messageData && messageData.type === 'RESOLVE_NEW_FIREBASE_TOKEN') {
+      const { success, token, error, promiseId } = messageData ?? {};
+      if (pendingTokenPromises[promiseId]) {
+        if (success) {
+          pendingTokenPromises[promiseId].resolve(token);
+        } else {
+          pendingTokenPromises[promiseId].reject(new Error(error || 'Token refresh failed from host.'));
+        }
+        delete pendingTokenPromises[promiseId];
+      }
+    }
+  });
+
+  // Expose a function for the Generated App to request a new Firebase token
+  window.requestNewFirebaseToken = function() {
+    const currentPromiseId = nextTokenPromiseId++;
+    const promise = new Promise((resolve, reject) => {
+      pendingTokenPromises[currentPromiseId] = { resolve, reject };
+    });
+    if (window.parent && window.parent !== window) {
+      window.parent.postMessage({
+        type: 'REQUEST_NEW_FIREBASE_TOKEN',
+        promiseId: currentPromiseId
+      }, '*');
+    } else {
+      pendingTokenPromises[currentPromiseId].reject(new Error('No parent window to request token from.'));
+      delete pendingTokenPromises[currentPromiseId];
+    }
+    return promise;
+  };
+})();</script><script data-bard-client-injected="true">
+let realOriginalGetUserMedia = null;
+if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+  realOriginalGetUserMedia = navigator.mediaDevices.getUserMedia.bind(navigator.mediaDevices);
+}
+
+(function() {
+  if (navigator.mediaDevices && navigator.mediaDevices.__proto__) {
+    try {
+      Object.defineProperty(navigator.mediaDevices.__proto__, 'getUserMedia', {
+        get: function() {
+          return undefined; // Or throw an error
+        },
+        configurable: false
+      });
+    } catch (error) {
+      console.error("Error defining prototype getter:", error);
+    }
+  }
+})();
+
+(function() {
+  const pendingMediaResolvers = {};
+  let nextMediaPromiseId = 0;
+
+  function requestMediaPermissions(constraints) {
+    const mediaPromiseId = nextMediaPromiseId++;
+    const promise = new Promise((resolve, reject) => {
+      pendingMediaResolvers[mediaPromiseId] = (granted) => {
+        delete pendingMediaResolvers[mediaPromiseId];
+        resolve(granted);
+      };
+    });
+
+    window.parent.postMessage({
+      type: 'requestMediaPermission',
+      constraints: constraints,
+      promiseId: mediaPromiseId,
+    }, '*');
+
+    return promise;
+  }
+
+  let originalGetUserMedia = realOriginalGetUserMedia;
+
+  function interceptGetUserMedia() {
+    if (navigator.mediaDevices) {
+      Object.defineProperty(navigator.mediaDevices, 'getUserMedia', {
+        value: function(constraints) {
+          return requestMediaPermissions(constraints).then((granted) => {
+            if (granted) {
+              if (originalGetUserMedia) {
+                return originalGetUserMedia(constraints);
+              } else {
+                throw new Error("Original getUserMedia not available.");
+              }
+            } else {
+              throw new DOMException('Permission denied', 'NotAllowedError');
+            }
+          });
+        },
+        writable: false,
+        configurable: false
+      });
+    }
+  }
+
+  interceptGetUserMedia();
+
+  const observer = new MutationObserver(function(mutationsList, observer) {
+    for (const mutation of mutationsList) {
+      if (mutation.type === 'reconfigured' && mutation.name === 'getUserMedia' && mutation.object === navigator.mediaDevices) {
+        interceptGetUserMedia();
+      } else if (mutation.type === 'attributes' && mutation.attributeName === 'getUserMedia' && mutation.target === navigator.mediaDevices) {
+        interceptGetUserMedia();
+      } else if (mutation.type === 'childList' && mutation.addedNodes) {
+        mutation.addedNodes.forEach(node => {
+          if (node === navigator.mediaDevices) {
+            interceptGetUserMedia();
+          }
+        });
+      }
+    }
+  });
+
+  function interceptSpeechRecognition() {
+    if (!window.SpeechRecognition && !window.webkitSpeechRecognition) {
+      return;
+    }
+
+    const OriginalSpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+
+    const SpeechRecognitionWrapper = function(...args) {
+      const recognizer = new OriginalSpeechRecognition(...args);
+      const originalStart = recognizer.start.bind(recognizer);
+
+      recognizer.start = function() {
+        requestMediaPermissions({ audio: true }).then(granted => {
+          if (granted) {
+            originalStart();
+          } else {
+            const errorEvent = new SpeechRecognitionErrorEvent('error');
+            errorEvent.error = 'not-allowed'; // This is the standard error for permission denial.
+            recognizer.dispatchEvent(errorEvent);
+          }
+        });
+      };
+
+      return recognizer;
+    };
+
+    SpeechRecognitionWrapper.prototype = OriginalSpeechRecognition.prototype;
+    SpeechRecognitionWrapper.prototype.constructor = SpeechRecognitionWrapper;
+
+    if (window.SpeechRecognition) {
+      window.SpeechRecognition = SpeechRecognitionWrapper;
+    }
+    if (window.webkitSpeechRecognition) {
+      window.webkitSpeechRecognition = SpeechRecognitionWrapper;
+    }
+  }
+
+  interceptSpeechRecognition();
+
+  window.addEventListener('message', function(event) {
+    if (event.data) {
+      if (event.data.type === 'resolveMediaPermission') {
+        const { promiseId, granted } = event.data;
+        if (pendingMediaResolvers[promiseId]) {
+          pendingMediaResolvers[promiseId](granted);
+        }
+      }
+    }
+  });
+
+})();</script><script ws-interception-config="{&quot;parentOrigin&quot;:&quot;https://gemini.google.com&quot;,&quot;proxiedDomains&quot;:[]}" data-bard-client-injected="true">(function(){'use strict';var u=typeof Object.defineProperties=="function"?Object.defineProperty:function(b,d,e){if(b==Array.prototype||b==Object.prototype)return b;b[d]=e.value;return b};function v(b){b=["object"==typeof globalThis&&globalThis,b,"object"==typeof window&&window,"object"==typeof self&&self,"object"==typeof global&&global];for(var d=0;d<b.length;++d){var e=b[d];if(e&&e.Math==Math)return e}throw Error("Cannot find global object");}var w=v(this);
+function y(b,d){if(d)a:{var e=w;b=b.split(".");for(var h=0;h<b.length-1;h++){var k=b[h];if(!(k in e))break a;e=e[k]}b=b[b.length-1];h=e[b];d=d(h);d!=h&&d!=null&&u(e,b,{configurable:!0,writable:!0,value:d})}}function z(b){function d(h){return b.next(h)}function e(h){return b.throw(h)}return new Promise(function(h,k){function m(n){n.done?h(n.value):Promise.resolve(n.value).then(d,e).then(m,k)}m(b.next())})}y("globalThis",function(b){return b||w});/*
+
+ Copyright The Closure Library Authors.
+ SPDX-License-Identifier: Apache-2.0
+*/
+function A(b,d){function e(){}e.prototype=d.prototype;b.i=d.prototype;b.prototype=new e;b.prototype.constructor=b;b.h=function(h,k,m){for(var n=Array(arguments.length-2),p=2;p<arguments.length;p++)n[p-2]=arguments[p];return d.prototype[k].apply(h,n)}};function B(b,d,e="*"){function h(a){if(typeof a==="string")return F.encode(a).buffer;if(a instanceof ArrayBuffer)return a.slice(0);if(ArrayBuffer.isView(a))return a.buffer.slice(a.byteOffset,a.byteOffset+a.byteLength);throw Error("Invalid data type");}function k(a){a=h(a);var f={type:"send",data:new Uint8Array(a)},g;(g=r)==null||g.postMessage(f,[a])}function m(){if(!r)throw Error("Data port not captured yet.");r.onmessage=a=>{if(a.data.type==="message"){a=new MessageEvent("message",{data:G.decode(a.data.data)});
+let f;(f=c.onmessage)==null||f.call(c,a);c.dispatchEvent(a)}}}function n(){if(!t)throw Error("Control port not captured yet.");t.onmessage=a=>{switch(a.data.type){case "open":l=1;var f=new Event("open"),g;(g=c.onopen)==null||g.call(c,f);c.dispatchEvent(f);q.forEach(H=>{k(H)});q=[];break;case "close":g=a.data;l=3;g=new CloseEvent("close",{code:g.code,reason:g.reason,wasClean:g.wasClean});(f=c.onclose)==null||f.call(c,g);c.dispatchEvent(g);break;case "error":l=3;f=new Event("error");let x;(x=c.onerror)==
+null||x.call(c,f);c.dispatchEvent(f)}}}function p(a){return z(function*(){var f=new MessageChannel;t=f.port1;var g=new MessageChannel;r=g.port1;n();m();window.parent.postMessage({type:"websocket_open",portOrdering:["control","data"],url:b,protocols:a||[],connectionId:I},e,[f.port2,g.port2])}())}var c=Reflect.construct(EventTarget,[],new.target);c.CONNECTING=0;c.OPEN=1;c.CLOSING=2;c.CLOSED=3;c.url=b;c.binaryType="arraybuffer";c.protocol="";c.extensions="";var l=0,t=null,r=null,q=[],F=new TextEncoder,
+G=new TextDecoder;c.onopen=null;c.onmessage=null;c.onclose=null;c.onerror=null;Object.defineProperty(c,"readyState",{get:()=>l,enumerable:!0,configurable:!0});Object.defineProperty(c,"bufferedAmount",{get:()=>{var a=0;q.forEach(f=>{a+=typeof f==="string"?f.length:f.byteLength});return a},enumerable:!0,configurable:!0});var I=function(){var a;return((a=globalThis.crypto)==null?0:a.randomUUID)?globalThis.crypto.randomUUID():"xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g,f=>{var g=Math.random()*
+16|0;return(f==="x"?g:g&3|8).toString(16)})}();c.send=a=>{if(l===1)a instanceof Blob?a.arrayBuffer().then(f=>{k(f)}):k(a);else if(l===0)if(typeof a==="string")q.push(a);else if(a instanceof ArrayBuffer||ArrayBuffer.isView(a))q.push(h(a));else throw Error("Sending Blob is not supported before the connection is open.");else console.debug("WebSocket send called in CLOSING or CLOSED state; ignored.")};c.close=(a=1E3,f="")=>{if(l!==2&&l!==3){l=2;a={type:"close",code:a,reason:f,wasClean:a===1E3};var g;
+(g=t)==null||g.postMessage(a)}};Promise.resolve().then(()=>p(d));return c}A(B,EventTarget);var C=document.currentScript,D=C==null?void 0:C.getAttribute("ws-interception-config");if(!D)throw Error("WebSocket Interceptor: Missing ws-interception-config attribute in the script tag.");var E=JSON.parse(D);if(!E.parentOrigin||typeof E.parentOrigin!=="string")throw Error("WebSocket Interceptor: Invalid parentOrigin in ws-interception-config");
+(function(b){var d=Object.getOwnPropertyDescriptor(window,"WebSocket");if(!d||d.writable||d.configurable)d=Object.assign(function(e,h){try{let k=(new URL(e)).hostname;if(b.proxiedDomains.some(m=>k===m||k.endsWith(`.${m}`)))return new B(e,h,b.parentOrigin)}catch(k){throw window.parent.postMessage({type:"websocket_blocked",url:e,reason:"blocked_invalid_url"},b.parentOrigin),new DOMException(`WebSocket connection to '${e}' is not allowed in Canvas.`,"SecurityError");}window.parent.postMessage({type:"websocket_blocked",
+url:e,reason:"blocked_domain_not_allowlisted"},b.parentOrigin);throw new DOMException(`WebSocket connection to '${e}' is not allowed in Canvas.`,"SecurityError");},{CONNECTING:0,OPEN:1,CLOSING:2,CLOSED:3}),Object.defineProperty(window,"WebSocket",{value:d,writable:!1,configurable:!1})})({proxiedDomains:E.proxiedDomains||[],parentOrigin:E.parentOrigin});}).call(this);
+</script><script data-bard-client-injected="true">((function(modelInformation) {
+  const originalFetch = window.fetch;
+  // TODO: b/421908508 - Move these out of the script and match all generative AI model calls.
+  let googleLlmBaseApiUrls = [
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.textModelName + ':streamGenerateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.textModelName + ':generateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageModelName + ':predict',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageModelName + ':predictLongRunning',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageEditModelName + ':generateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageTransformModelName + ':generateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.videoModelName + ':predict',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.videoModelName + ':predictLongRunning',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.ttsModelName + ':generateContent',
+  ];
+  modelInformation.deprecatedTextModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+    );
+  });
+  modelInformation.deprecatedImageModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':predict',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':predictLongRunning',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+    );
+  });
+  modelInformation.deprecatedGenerateImageModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+    );
+  });
+  modelInformation.deprecatedImageTransformModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+    );
+  });
+
+  const pendingFetchResolvers = {};
+  let nextPromiseId = 0;
+
+  function handleStringInput(input, optionsArgument) {
+    const actualUrl = input;
+    const fetchCallArgs = [actualUrl, optionsArgument];
+    const effectiveOptions = optionsArgument || {};
+    const bodyForApiKeyCheck = effectiveOptions.body;
+    const bodyForPostMessage = effectiveOptions.body;
+    return { actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage };
+  }
+
+  function handleRequestInput(input, optionsArgument) {
+    const actualUrl = input.url;
+    const fetchCallArgs = [input, optionsArgument];
+    const effectiveOptions = { method: input.method, headers: new Headers(input.headers) };
+    let bodyForApiKeyCheck;
+    let bodyForPostMessage;
+
+    if (optionsArgument) {
+      if (optionsArgument.method) effectiveOptions.method = optionsArgument.method;
+      if (optionsArgument.headers) effectiveOptions.headers = new Headers(optionsArgument.headers);
+      if ('body' in optionsArgument) {
+        bodyForApiKeyCheck = optionsArgument.body;
+        bodyForPostMessage = optionsArgument.body;
+      } else {
+        bodyForApiKeyCheck = undefined;
+        bodyForPostMessage = input.body;
+      }
+    } else {
+      bodyForApiKeyCheck = undefined;
+      bodyForPostMessage = input.body;
+    }
+    return { actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage };
+  }
+
+  window.fetch = function(input, optionsArgument) {
+    let actualUrl;
+    let fetchCallArgs;
+    let effectiveOptions = {};
+    let bodyForApiKeyCheck;
+    let bodyForPostMessage;
+
+    if (typeof input === 'string') {
+      ({actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage} = handleStringInput(input, optionsArgument));
+    } else if (input instanceof Request) {
+      ({actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage} = handleRequestInput(input, optionsArgument));
+    } else {
+      return originalFetch.apply(window, [input, optionsArgument]);
+    }
+
+    effectiveOptions.method = effectiveOptions.method || 'GET';
+    if (!effectiveOptions.headers) {
+      effectiveOptions.headers = new Headers();
+    }
+
+
+    if (typeof actualUrl === 'string' && googleLlmBaseApiUrls.some((url) => actualUrl.startsWith(url))) {
+      let apiKeyIsNull = true;
+
+      const regex = new RegExp("models/([^:]+)");
+      const modelNameMatch = actualUrl.match(regex);
+      const modelName = modelNameMatch ? modelNameMatch[1] : 'unspecified';
+
+
+      try {
+        const urlObject = new URL(actualUrl);  // Use URL object for robust parsing
+        const apiKeyParam = urlObject.searchParams.get('key');
+        if (apiKeyParam) {
+          apiKeyIsNull = false;
+        }
+      } catch (e) {
+        // Continue checks even if URL parsing fails
+      }
+
+      if (apiKeyIsNull && effectiveOptions.headers) {
+        const h = new Headers(effectiveOptions.headers);
+        const apiKeyHeaderValue = h.get('X-API-Key') || h.get('x-api-key');
+        if (apiKeyHeaderValue) {
+          apiKeyIsNull = false;
+          return originalFetch.apply(window, fetchCallArgs);
+        }
+      }
+
+      if (apiKeyIsNull && effectiveOptions.method && ['POST', 'PUT', 'PATCH'].includes(effectiveOptions.method.toUpperCase()) && typeof bodyForApiKeyCheck === 'string') {
+        try {
+          const bodyData = JSON.parse(bodyForApiKeyCheck);
+          if (bodyData && bodyData.apiKey) {
+            apiKeyIsNull = false;
+            return originalFetch.apply(window, fetchCallArgs);
+          }
+        } catch (e) {
+          // Ignore JSON parsing errors
+        }
+      }
+
+      if(apiKeyIsNull) {
+        const promiseId = nextPromiseId++;
+        const promise = new Promise((resolve) => {
+          pendingFetchResolvers[promiseId] = (resolvedResponse) => {
+            delete pendingFetchResolvers[promiseId];
+            resolve(resolvedResponse);
+          };
+        });
+
+        let serializedBodyForPostMessage;
+        if (typeof bodyForPostMessage === 'string' || bodyForPostMessage == null) {
+            serializedBodyForPostMessage = bodyForPostMessage;
+        } else if (bodyForPostMessage instanceof ReadableStream) {
+            serializedBodyForPostMessage = null;
+        } else {
+            try {
+                serializedBodyForPostMessage = JSON.stringify(bodyForPostMessage);
+            } catch (e) {
+                serializedBodyForPostMessage = null;
+            }
+        }
+
+        const messageOptions = {
+            method: effectiveOptions.method,
+            headers: Object.fromEntries(new Headers(effectiveOptions.headers).entries()),
+            body: serializedBodyForPostMessage
+        };
+
+        window.parent.postMessage({
+          type: 'requestFetch',
+          url: actualUrl,
+          modelName: modelName,
+          options: messageOptions,
+          promiseId: promiseId,
+        }, '*');
+
+        return promise;
+      }
+      return originalFetch.apply(window, fetchCallArgs);
+    }
+    return originalFetch.apply(window, fetchCallArgs);
+  };
+
+  window.addEventListener('message', function(event) {
+    if (event.data && event.data.type === 'resolveFetch') {
+      const { promiseId, response } = event.data;
+      if (pendingFetchResolvers[promiseId]) {
+        try {
+          const reconstructedResponse = new Response(response.body, {
+            status: response.status,
+            statusText: response.statusText,
+            headers: new Headers(response.headers),
+          });
+          pendingFetchResolvers[promiseId](reconstructedResponse);
+        } catch (error) {
+          pendingFetchResolvers[promiseId](new Response(null, { status: 500, statusText: "Interceptor Response Reconstruction Error" }));
+        }
+      }
+    }
+  });
+
+}))({"textModelName":"gemini-3-flash-preview","imageModelName":"imagen-4.0-generate-001","imageEditModelName":"gemini-3.1-flash-image","imageTransformModelName":"gemini-3-pro-image","videoModelName":"veo-2.0-generate-001","ttsModelName":"gemini-2.5-flash-preview-tts","deprecatedTextModelNames":["gemini-2.0-flash","gemini-2.5-flash","gemini-2.5-flash-preview-04-17","gemini-2.5-flash-preview-05-20","gemini-2.5-flash-preview-09-2025"],"deprecatedImageModelNames":["imagen-3.0-generate-001","imagen-3.0-generate-002"],"deprecatedGenerateImageModelNames":["gemini-2.5-flash-image-preview","gemini-2.5-flash-image","gemini-3.1-flash-image-preview"],"deprecatedImageTransformModelNames":["gemini-3-pro-image-preview-11-2025"]})</script><script data-bard-client-injected="true">(function() {
+  const OVERLAY_SELECTOR =
+    'dialog[open], [role="dialog"], [role="alertdialog"], [role="menu"], [role="listbox"], [role="combobox"]';
+
+  function isVisibleOverlay(element) {
+    if (element.closest('[hidden], [aria-hidden="true"], [inert]')) {
+      return false;
+    }
+    if (window.getComputedStyle(element).visibility === 'hidden') {
+      return false;
+    }
+    for (let cur = element; cur; cur = cur.parentElement) {
+      if (window.getComputedStyle(cur).display === 'none') {
+        return false;
+      }
+    }
+    return true;
+  }
+
+  function hasOpenOverlay() {
+    const candidates = document.querySelectorAll(OVERLAY_SELECTOR);
+    for (let i = 0; i < candidates.length; i++) {
+      if (isVisibleOverlay(candidates[i])) {
+        return true;
+      }
+    }
+    try {
+      if (document.querySelector('[popover]:popover-open')) {
+        return true;
+      }
+    } catch (e) {
+      // Ignore engines that do not support :popover-open.
+    }
+    return false;
+  }
+
+  function isNonEmptySearchInput(target) {
+    return (
+      Boolean(target) &&
+      target.tagName === 'INPUT' &&
+      typeof target.type === 'string' &&
+      target.type.toLowerCase() === 'search' &&
+      typeof target.value === 'string' &&
+      target.value.length > 0
+    );
+  }
+
+  function shouldIgnoreEscape(event) {
+    return (
+      event.key !== 'Escape' ||
+      event.altKey ||
+      event.ctrlKey ||
+      event.metaKey ||
+      event.shiftKey ||
+      event.isComposing ||
+      event.repeat ||
+      event.keyCode === 229 ||
+      isNonEmptySearchInput(event.target)
+    );
+  }
+
+  let shouldIgnoreCaptureState = false;
+
+  window.addEventListener(
+    'keydown',
+    function(event) {
+      if (event.key === 'Escape') {
+        shouldIgnoreCaptureState =
+          hasOpenOverlay() || isNonEmptySearchInput(event.target);
+      }
+    },
+    {capture: true},
+  );
+
+  window.addEventListener('keydown', function(event) {
+    if (
+      shouldIgnoreEscape(event) ||
+      event.defaultPrevented ||
+      shouldIgnoreCaptureState
+    ) {
+      return;
+    }
+    const wasBlockedOnCapture = shouldIgnoreCaptureState;
+    queueMicrotask(function() {
+      if (event.defaultPrevented || wasBlockedOnCapture) {
+        return;
+      }
+      if (window.parent && window.parent !== window) {
+        window.parent.postMessage({'type': 'escapeKey'}, '*');
+      }
+    });
+  });
+})();</script><script data-bard-client-injected="true">(function() {
+  function normalizeSlug(str) {
+    try {
+      return str
+        .trim()
+        .toLowerCase()
+        .replace(/[^p{L}p{N}s_-]/gu, '')
+        .replace(/s+/g, '-');
+    } catch (e) {
+      return str
+        .trim()
+        .toLowerCase()
+        .replace(/[^a-z0-9s_-]/g, '')
+        .replace(/s+/g, '-');
+    }
+  }
+
+  function findTargetElement(hash) {
+    if (!hash || hash === '#') {
+      return null;
+    }
+    const rawId = hash.startsWith('#') ? hash.slice(1) : hash;
+    let decodedId = rawId;
+    try {
+      decodedId = decodeURIComponent(rawId);
+    } catch (e) {
+      // Ignore URI malformed errors.
+    }
+
+    // 1. Direct ID match (raw and decoded).
+    let target = document.getElementById(rawId) || document.getElementById(decodedId);
+    if (target) {
+      return target;
+    }
+
+    // 2. Name attribute match (<a name="...">).
+    try {
+      if (typeof CSS !== 'undefined' && CSS.escape) {
+        target =
+          document.querySelector('[name="' + CSS.escape(rawId) + '"]') ||
+          document.querySelector('[name="' + CSS.escape(decodedId) + '"]');
+      } else {
+        const namedElements = document.getElementsByName(rawId);
+        if (namedElements && namedElements.length > 0) {
+          return namedElements[0];
+        }
+      }
+    } catch (e) {
+      // Ignore querySelector syntax errors.
+    }
+    if (target) {
+      return target;
+    }
+
+    // 3. Match heading text by slug (for Markdown TOCs where headings lack explicit IDs).
+    const targetSlug = normalizeSlug(decodedId);
+    if (targetSlug) {
+      for (const heading of document.querySelectorAll('h1, h2, h3, h4, h5, h6')) {
+        if (normalizeSlug(heading.textContent || '') === targetSlug) {
+          return heading;
+        }
+      }
+    }
+
+    return null;
+  }
+
+  document.addEventListener('click', function(event) {
+    const target = event.target;
+    const anchor = target && typeof target.closest === 'function' ? target.closest('a') : null;
+    if (!anchor) {
+      return;
+    }
+
+    const href = anchor.getAttribute('href');
+    if (
+      !href ||
+      href.trim().toLowerCase().startsWith('javascript:') ||
+      anchor.hasAttribute('download')
+    ) {
+      return;
+    }
+
+    // Check if the link is an in-page hash / anchor link.
+    if (href.startsWith('#')) {
+      event.preventDefault();
+      const targetElement = findTargetElement(href);
+      if (targetElement) {
+        targetElement.scrollIntoView({behavior: 'smooth', block: 'start'});
+      }
+      return;
+    }
+
+    // Check if the URL has the same origin/pathname but with a hash.
+    try {
+      const url = new URL(anchor.href, window.location.href);
+      if (
+        url.hash &&
+        url.origin === window.location.origin &&
+        url.pathname === window.location.pathname
+      ) {
+        event.preventDefault();
+        const targetElement = findTargetElement(url.hash);
+        if (targetElement) {
+          targetElement.scrollIntoView({behavior: 'smooth', block: 'start'});
+        }
+        return;
+      }
+    } catch (e) {
+      // Fall through if URL parsing fails.
+    }
+
+    // For all external or full navigation links, prevent iframe-level navigation
+    // (which breaks in AGSA WebView or sandboxed iframes) and ensure they open
+    // safely in a new tab/window.
+    if (anchor.target !== '_blank') {
+      event.preventDefault();
+      window.open(anchor.href, '_blank', 'noopener,noreferrer');
+    }
+  }, {capture: true});
+})();</script><script data-bard-client-injected="true">(function(){'use strict';function a(){window.parent.postMessage({type:"interaction"},"*")}window.addEventListener("click",a,{capture:!0,passive:!0});window.addEventListener("touchstart",a,{capture:!0,passive:!0});window.addEventListener("keydown",a,{capture:!0,passive:!0});}).call(this);
+</script><script data-bard-client-injected="true">(function() {
+  const originalConsoleLog = console.log;
+  const originalConsoleError = console.error;
+
+    /**
+   * Normalizes an error event or a promise rejection reason into a structured error object.
+   * @param {*} errorEventOrReason The error object or reason.
+   * @return {object} Structured error data { message, name, stack }.
+   */
+  function getErrorObject(errorEventOrReason) {
+    if (errorEventOrReason instanceof Error) {
+      return {
+        message: errorEventOrReason.message,
+        name: errorEventOrReason.name,
+        stack: errorEventOrReason.stack,
+      };
+    }
+    // Fallback for non-Error objects.
+    try {
+      return {
+        message: JSON.stringify(errorEventOrReason),
+        name: 'UnknownErrorType',
+        stack: null,
+      };
+    } catch (e) {
+      return {
+        message: String(errorEventOrReason),
+        name: 'UnknownErrorTypeNonStringifiable',
+        stack: null,
+      };
+    }
+  }
+
+  /**
+   * Converts an array of arguments (from log/error) into a single string.
+   * Handles Error objects specially to include their message and stack.
+   * @param {Array<*>} args - Arguments passed to console methods.
+   * @return {string} A string representation of the arguments.
+   */
+  function stringifyArgs(args) {
+    return args
+      .map((arg) => {
+        if (arg instanceof Error) {
+          const {message, stack} = arg;
+          return `Error: ${message}${stack ? ('\nStack: ' + stack) : ''}`;
+        }
+        if (typeof arg === 'object' && arg !== null) {
+          try {
+            return JSON.stringify(arg);
+          } catch (error) {
+            return '[Circular Object]';
+          }
+        } else {
+          return String(arg);
+        }
+      })
+      .join(' ');
+  }
+
+  console.log = function(...args) {
+    const logString = stringifyArgs(args);
+    window.parent.postMessage({ type: 'log', message: logString }, '*');
+    originalConsoleLog.apply(console, args);
+  };
+
+  console.error = function(...args) {
+    let errorData;
+    if (args.length > 0 && args[0] instanceof Error) {
+      const err = args[0];
+      // If the first arg is an Error, capture its details.
+      errorData = {
+        type: 'error',
+        source: 'CONSOLE_ERROR',
+        ...getErrorObject(err),
+        rawArgsString: stringifyArgs(args.slice(1)),
+        timestamp: new Date().toISOString(),
+      };
+    } else {
+      // If not an Error object, treat all args as a general error message.
+      errorData = {
+        type: 'error',
+        source: 'CONSOLE_ERROR',
+        message: stringifyArgs(args),
+        name: 'ConsoleLoggedError',
+        stack: null,
+        timestamp: new Date().toISOString(),
+      };
+    }
+    window.parent.postMessage(errorData, '*');
+    originalConsoleError.apply(console, args);
+  };
+
+  // Listen for global unhandled synchronous errors.
+  window.addEventListener('error', function(event) {
+    const errorDetails = event.error ? getErrorObject(event.error) : {
+      message: event.message,
+      name: 'GlobalError',
+      stack: null,
+      filename: event.filename,
+      lineno: event.lineno,
+      colno: event.colno,
+    };
+
+    window.parent.postMessage({
+      type: 'error',
+      source: 'global',
+      ...errorDetails,
+      message: errorDetails.message || event.message,
+      timestamp: new Date().toISOString(),
+    }, '*');
+  });
+
+  // Listen for unhandled promise rejections (asynchronous errors).
+  window.addEventListener('unhandledrejection', function(event) {
+    const errorDetails = getErrorObject(event.reason);
+
+    window.parent.postMessage({
+      type: 'error',
+      source: 'unhandledrejection',
+      ...errorDetails,
+      message: errorDetails.message || 'Unhandled Promise Rejection',
+      timestamp: new Date().toISOString(),
+    }, '*');
+  });
+
+})();</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REDA AHMED WEDDING | Wedding Photography &amp; High-End Color Grading</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Cairo & Amiri for Arabic, Cinzel & Playfair Display for Luxury Brand & Tagline -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,700;1,700&amp;family=Cairo:wght@300;400;500;600;700;800&amp;family=Cinzel:wght@600;700;800&amp;family=Playfair+Display:ital,wght@0,600;0,700;1,600&amp;display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        obsidian: '#09090b',
+                        charcoal: '#121216',
+                        cardbg: '#18181d',
+                        gold: {
+                            400: '#e5c158',
+                            500: '#d4af37',
+                            600: '#b59224',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Cairo', 'sans-serif'],
+                        arabicSerif: ['Amiri', 'serif'],
+                        brand: ['Cinzel', 'serif'],
+                        editorial: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            background-color: #09090b;
+            color: #f4f4f5;
+            font-family: 'Cairo', sans-serif;
+            overflow-x: hidden;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #09090b;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #27272a;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #d4af37;
+        }
+
+        /* Glassmorphism & Luxury Accents */
+        .glass-nav {
+            background: rgba(9, 9, 11, 0.85);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border-bottom: 1px solid rgba(212, 175, 55, 0.15);
+        }
+
+        .glass-card {
+            background: linear-gradient(145deg, rgba(24, 24, 29, 0.9), rgba(15, 15, 19, 0.95));
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .glass-card:hover {
+            border-color: rgba(212, 175, 55, 0.45);
+            transform: translateY(-6px);
+            box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.8), 0 0 25px rgba(212, 175, 55, 0.1);
+        }
+
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #f3e5ab 0%, #d4af37 50%, #aa821c 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .gold-btn {
+            background: linear-gradient(135deg, #d4af37 0%, #b59224 100%);
+            color: #09090b;
+            transition: all 0.3s ease;
+        }
+
+        .gold-btn:hover {
+            background: linear-gradient(135deg, #e5c158 0%, #d4af37 100%);
+            box-shadow: 0 0 20px rgba(212, 175, 55, 0.4);
+            transform: translateY(-2px);
+        }
+
+        .session-img-zoom {
+            transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .glass-card:hover .session-img-zoom {
+            transform: scale(1.07);
+        }
+
+        /* Subtle Pulse for Floating Contact */
+        @keyframes pulse-ring {
+            0% { transform: scale(0.95); opacity: 0.7; }
+            70% { transform: scale(1.35); opacity: 0; }
+            100% { transform: scale(1.35); opacity: 0; }
+        }
+        .animate-pulse-ring::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            border-radius: 9999px;
+            background-color: inherit;
+            z-index: -1;
+            animation: pulse-ring 2s infinite;
+        }
+
+        /* Before/After Color Grading Comparison Slider */
+        .comparison-slider-wrapper {
+            position: relative;
+            overflow: hidden;
+            user-select: none;
+            touch-action: pan-y;
+        }
+        .raw-before-filter {
+            filter: saturate(0.42) contrast(0.82) brightness(1.04) sepia(0.08);
+        }
+        .graded-after-filter {
+            filter: saturate(1.22) contrast(1.12) brightness(1.02);
+        }
+    </style>
+<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:Cairo, sans-serif;font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.pointer-events-none{pointer-events:none}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.sticky{position:sticky}.inset-0{inset:0px}.inset-x-0{left:0px;right:0px}.top-0{top:0px}.-top-3\.5{top:-0.875rem}.bottom-0{bottom:0px}.bottom-5{bottom:1.25rem}.left-1\/2{left:50%}.left-4{left:1rem}.left-5{left:1.25rem}.left-6{left:1.5rem}.right-1\/4{right:25%}.right-3\.5{right:0.875rem}.right-4{right:1rem}.top-1\/2{top:50%}.top-1\/4{top:25%}.top-24{top:6rem}.top-4{top:1rem}.top-5{top:1.25rem}.z-40{z-index:40}.z-0{z-index:0}.z-10{z-index:10}.z-20{z-index:20}.z-30{z-index:30}.z-50{z-index:50}.z-\[60\]{z-index:60}.z-\[70\]{z-index:70}.m-0{margin:0px}.mx-auto{margin-left:auto;margin-right:auto}.mb-1{margin-bottom:0.25rem}.mb-1\.5{margin-bottom:0.375rem}.mb-10{margin-bottom:2.5rem}.mb-12{margin-bottom:3rem}.mb-14{margin-bottom:3.5rem}.mb-2{margin-bottom:0.5rem}.mb-3{margin-bottom:0.75rem}.mb-4{margin-bottom:1rem}.mb-5{margin-bottom:1.25rem}.mb-6{margin-bottom:1.5rem}.mb-8{margin-bottom:2rem}.mt-0\.5{margin-top:0.125rem}.mt-1{margin-top:0.25rem}.mt-1\.5{margin-top:0.375rem}.mt-12{margin-top:3rem}.mt-2{margin-top:0.5rem}.mt-3{margin-top:0.75rem}.line-clamp-1{overflow:hidden;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:1}.line-clamp-2{overflow:hidden;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2}.block{display:block}.inline-block{display:inline-block}.flex{display:flex}.inline-flex{display:inline-flex}.grid{display:grid}.hidden{display:none}.h-10{height:2.5rem}.h-11{height:2.75rem}.h-12{height:3rem}.h-14{height:3.5rem}.h-16{height:4rem}.h-2{height:0.5rem}.h-20{height:5rem}.h-8{height:2rem}.h-96{height:24rem}.h-\[360px\]{height:360px}.h-full{height:100%}.h-72{height:18rem}.h-9{height:2.25rem}.max-h-60{max-height:15rem}.max-h-\[82vh\]{max-height:82vh}.min-h-\[92vh\]{min-height:92vh}.min-h-screen{min-height:100vh}.w-0\.5{width:0.125rem}.w-10{width:2.5rem}.w-11{width:2.75rem}.w-12{width:3rem}.w-14{width:3.5rem}.w-16{width:4rem}.w-2{width:0.5rem}.w-5{width:1.25rem}.w-8{width:2rem}.w-96{width:24rem}.w-full{width:100%}.w-9{width:2.25rem}.max-w-7xl{max-width:80rem}.max-w-2xl{max-width:42rem}.max-w-3xl{max-width:48rem}.max-w-4xl{max-width:56rem}.max-w-6xl{max-width:72rem}.max-w-full{max-width:100%}.max-w-none{max-width:none}.max-w-xl{max-width:36rem}.shrink-0{flex-shrink:0}.-translate-x-1\/2{--tw-translate-x:-50%;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.-translate-y-1\/2{--tw-translate-y:-50%;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.translate-y-3{--tw-translate-y:0.75rem;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.scale-105{--tw-scale-x:1.05;--tw-scale-y:1.05;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.transform{transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}@keyframes bounce{0%, 100%{transform:translateY(-25%);animation-timing-function:cubic-bezier(0.8,0,1,1)}50%{transform:none;animation-timing-function:cubic-bezier(0,0,0.2,1)}}.animate-bounce{animation:bounce 1s infinite}@keyframes ping{75%, 100%{transform:scale(2);opacity:0}}.animate-ping{animation:ping 1s cubic-bezier(0, 0, 0.2, 1) infinite}.cursor-ew-resize{cursor:ew-resize}.cursor-pointer{cursor:pointer}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.grid-cols-4{grid-template-columns:repeat(4, minmax(0, 1fr))}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-start{align-items:flex-start}.items-center{align-items:center}.items-stretch{align-items:stretch}.justify-end{justify-content:flex-end}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-1\.5{gap:0.375rem}.gap-10{gap:2.5rem}.gap-2{gap:0.5rem}.gap-2\.5{gap:0.625rem}.gap-3{gap:0.75rem}.gap-4{gap:1rem}.gap-5{gap:1.25rem}.gap-6{gap:1.5rem}.gap-7{gap:1.75rem}.space-y-2 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.5rem * var(--tw-space-y-reverse))}.space-y-2\.5 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.625rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.625rem * var(--tw-space-y-reverse))}.space-y-3 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.75rem * var(--tw-space-y-reverse))}.space-y-5 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.25rem * var(--tw-space-y-reverse))}.space-y-6 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.5rem * var(--tw-space-y-reverse))}.self-start{align-self:flex-start}.overflow-hidden{overflow:hidden}.overflow-y-auto{overflow-y:auto}.scroll-smooth{scroll-behavior:smooth}.rounded-2xl{border-radius:1rem}.rounded-3xl{border-radius:1.5rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.rounded-xl{border-radius:0.75rem}.border{border-width:1px}.border-2{border-width:2px}.border-b{border-bottom-width:1px}.border-l{border-left-width:1px}.border-r-2{border-right-width:2px}.border-t{border-top-width:1px}.border-emerald-500\/25{border-color:rgb(16 185 129 / 0.25)}.border-emerald-500\/30{border-color:rgb(16 185 129 / 0.3)}.border-emerald-500\/40{border-color:rgb(16 185 129 / 0.4)}.border-gold-500{--tw-border-opacity:1;border-color:rgb(212 175 55 / var(--tw-border-opacity, 1))}.border-gold-500\/20{border-color:rgb(212 175 55 / 0.2)}.border-gold-500\/30{border-color:rgb(212 175 55 / 0.3)}.border-gold-500\/40{border-color:rgb(212 175 55 / 0.4)}.border-gold-500\/50{border-color:rgb(212 175 55 / 0.5)}.border-white{--tw-border-opacity:1;border-color:rgb(255 255 255 / var(--tw-border-opacity, 1))}.border-zinc-700{--tw-border-opacity:1;border-color:rgb(63 63 70 / var(--tw-border-opacity, 1))}.border-zinc-700\/80{border-color:rgb(63 63 70 / 0.8)}.border-zinc-800{--tw-border-opacity:1;border-color:rgb(39 39 42 / var(--tw-border-opacity, 1))}.border-zinc-800\/80{border-color:rgb(39 39 42 / 0.8)}.border-zinc-900{--tw-border-opacity:1;border-color:rgb(24 24 27 / var(--tw-border-opacity, 1))}.border-zinc-800\/60{border-color:rgb(39 39 42 / 0.6)}.bg-black\/75{background-color:rgb(0 0 0 / 0.75)}.bg-black\/90{background-color:rgb(0 0 0 / 0.9)}.bg-black\/95{background-color:rgb(0 0 0 / 0.95)}.bg-charcoal{--tw-bg-opacity:1;background-color:rgb(18 18 22 / var(--tw-bg-opacity, 1))}.bg-charcoal\/95{background-color:rgb(18 18 22 / 0.95)}.bg-emerald-500{--tw-bg-opacity:1;background-color:rgb(16 185 129 / var(--tw-bg-opacity, 1))}.bg-emerald-500\/15{background-color:rgb(16 185 129 / 0.15)}.bg-emerald-500\/20{background-color:rgb(16 185 129 / 0.2)}.bg-emerald-600{--tw-bg-opacity:1;background-color:rgb(5 150 105 / var(--tw-bg-opacity, 1))}.bg-emerald-600\/20{background-color:rgb(5 150 105 / 0.2)}.bg-gold-400{--tw-bg-opacity:1;background-color:rgb(229 193 88 / var(--tw-bg-opacity, 1))}.bg-gold-500{--tw-bg-opacity:1;background-color:rgb(212 175 55 / var(--tw-bg-opacity, 1))}.bg-gold-500\/10{background-color:rgb(212 175 55 / 0.1)}.bg-gold-500\/15{background-color:rgb(212 175 55 / 0.15)}.bg-obsidian{--tw-bg-opacity:1;background-color:rgb(9 9 11 / var(--tw-bg-opacity, 1))}.bg-zinc-800{--tw-bg-opacity:1;background-color:rgb(39 39 42 / var(--tw-bg-opacity, 1))}.bg-zinc-800\/80{background-color:rgb(39 39 42 / 0.8)}.bg-zinc-800\/90{background-color:rgb(39 39 42 / 0.9)}.bg-zinc-900{--tw-bg-opacity:1;background-color:rgb(24 24 27 / var(--tw-bg-opacity, 1))}.bg-zinc-900\/40{background-color:rgb(24 24 27 / 0.4)}.bg-zinc-900\/60{background-color:rgb(24 24 27 / 0.6)}.bg-zinc-900\/80{background-color:rgb(24 24 27 / 0.8)}.bg-zinc-900\/90{background-color:rgb(24 24 27 / 0.9)}.bg-black\/40{background-color:rgb(0 0 0 / 0.4)}.bg-black\/70{background-color:rgb(0 0 0 / 0.7)}.bg-gradient-to-br{background-image:linear-gradient(to bottom right, var(--tw-gradient-stops))}.bg-gradient-to-r{background-image:linear-gradient(to right, var(--tw-gradient-stops))}.bg-gradient-to-t{background-image:linear-gradient(to top, var(--tw-gradient-stops))}.from-gold-400{--tw-gradient-from:#e5c158 var(--tw-gradient-from-position);--tw-gradient-to:rgb(229 193 88 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-obsidian{--tw-gradient-from:#09090b var(--tw-gradient-from-position);--tw-gradient-to:rgb(9 9 11 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-cardbg{--tw-gradient-from:#18181d var(--tw-gradient-from-position);--tw-gradient-to:rgb(24 24 29 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.via-obsidian\/80{--tw-gradient-to:rgb(9 9 11 / 0)  var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), rgb(9 9 11 / 0.8) var(--tw-gradient-via-position), var(--tw-gradient-to)}.via-transparent{--tw-gradient-to:rgb(0 0 0 / 0)  var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), transparent var(--tw-gradient-via-position), var(--tw-gradient-to)}.to-gold-600{--tw-gradient-to:#b59224 var(--tw-gradient-to-position)}.to-obsidian\/60{--tw-gradient-to:rgb(9 9 11 / 0.6) var(--tw-gradient-to-position)}.to-obsidian\/90{--tw-gradient-to:rgb(9 9 11 / 0.9) var(--tw-gradient-to-position)}.to-black\/40{--tw-gradient-to:rgb(0 0 0 / 0.4) var(--tw-gradient-to-position)}.object-contain{object-fit:contain}.object-cover{object-fit:cover}.p-2\.5{padding:0.625rem}.p-3{padding:0.75rem}.p-4{padding:1rem}.p-5{padding:1.25rem}.p-6{padding:1.5rem}.p-7{padding:1.75rem}.px-4{padding-left:1rem;padding-right:1rem}.px-3{padding-left:0.75rem;padding-right:0.75rem}.px-3\.5{padding-left:0.875rem;padding-right:0.875rem}.px-5{padding-left:1.25rem;padding-right:1.25rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.px-7{padding-left:1.75rem;padding-right:1.75rem}.py-0\.5{padding-top:0.125rem;padding-bottom:0.125rem}.py-1{padding-top:0.25rem;padding-bottom:0.25rem}.py-1\.5{padding-top:0.375rem;padding-bottom:0.375rem}.py-12{padding-top:3rem;padding-bottom:3rem}.py-16{padding-top:4rem;padding-bottom:4rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-2\.5{padding-top:0.625rem;padding-bottom:0.625rem}.py-20{padding-top:5rem;padding-bottom:5rem}.py-3{padding-top:0.75rem;padding-bottom:0.75rem}.py-3\.5{padding-top:0.875rem;padding-bottom:0.875rem}.py-4{padding-top:1rem;padding-bottom:1rem}.py-8{padding-top:2rem;padding-bottom:2rem}.pb-12{padding-bottom:3rem}.pb-16{padding-bottom:4rem}.pb-4{padding-bottom:1rem}.pb-5{padding-bottom:1.25rem}.pl-1\.5{padding-left:0.375rem}.pl-4{padding-left:1rem}.pr-1{padding-right:0.25rem}.pr-10{padding-right:2.5rem}.pr-3{padding-right:0.75rem}.pt-2{padding-top:0.5rem}.pt-24{padding-top:6rem}.pt-3{padding-top:0.75rem}.pt-5{padding-top:1.25rem}.pt-8{padding-top:2rem}.pb-6{padding-bottom:1.5rem}.text-center{text-align:center}.text-right{text-align:right}.font-brand{font-family:Cinzel, serif}.font-editorial{font-family:Playfair Display, serif}.text-2xl{font-size:1.5rem;line-height:2rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-\[10px\]{font-size:10px}.text-base{font-size:1rem;line-height:1.5rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:0.75rem;line-height:1rem}.font-bold{font-weight:700}.font-extrabold{font-weight:800}.font-medium{font-weight:500}.font-semibold{font-weight:600}.uppercase{text-transform:uppercase}.italic{font-style:italic}.leading-none{line-height:1}.leading-relaxed{line-height:1.625}.leading-snug{line-height:1.375}.leading-tight{line-height:1.25}.tracking-wide{letter-spacing:0.025em}.tracking-wider{letter-spacing:0.05em}.tracking-widest{letter-spacing:0.1em}.text-emerald-400{--tw-text-opacity:1;color:rgb(52 211 153 / var(--tw-text-opacity, 1))}.text-gold-400{--tw-text-opacity:1;color:rgb(229 193 88 / var(--tw-text-opacity, 1))}.text-gold-400\/90{color:rgb(229 193 88 / 0.9)}.text-obsidian{--tw-text-opacity:1;color:rgb(9 9 11 / var(--tw-text-opacity, 1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.text-zinc-100{--tw-text-opacity:1;color:rgb(244 244 245 / var(--tw-text-opacity, 1))}.text-zinc-200{--tw-text-opacity:1;color:rgb(228 228 231 / var(--tw-text-opacity, 1))}.text-zinc-300{--tw-text-opacity:1;color:rgb(212 212 216 / var(--tw-text-opacity, 1))}.text-zinc-400{--tw-text-opacity:1;color:rgb(161 161 170 / var(--tw-text-opacity, 1))}.text-zinc-500{--tw-text-opacity:1;color:rgb(113 113 122 / var(--tw-text-opacity, 1))}.underline{-webkit-text-decoration-line:underline;text-decoration-line:underline}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.placeholder-zinc-500::placeholder{--tw-placeholder-opacity:1;color:rgb(113 113 122 / var(--tw-placeholder-opacity, 1))}.opacity-0{opacity:0}.opacity-30{opacity:0.3}.shadow-2xl{--tw-shadow:0 25px 50px -12px rgb(0 0 0 / 0.25);--tw-shadow-colored:0 25px 50px -12px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-\[0_0_15px_rgba\(212\2c 175\2c 55\2c 0\.9\)\]{--tw-shadow:0 0 15px rgba(212,175,55,0.9);--tw-shadow-colored:0 0 15px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-lg{--tw-shadow:0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-md{--tw-shadow:0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-xl{--tw-shadow:0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-black{--tw-shadow-color:#000;--tw-shadow:var(--tw-shadow-colored)}.shadow-emerald-500\/40{--tw-shadow-color:rgb(16 185 129 / 0.4);--tw-shadow:var(--tw-shadow-colored)}.shadow-emerald-600\/20{--tw-shadow-color:rgb(5 150 105 / 0.2);--tw-shadow:var(--tw-shadow-colored)}.shadow-gold-500\/10{--tw-shadow-color:rgb(212 175 55 / 0.1);--tw-shadow:var(--tw-shadow-colored)}.shadow-gold-500\/15{--tw-shadow-color:rgb(212 175 55 / 0.15);--tw-shadow:var(--tw-shadow-colored)}.shadow-gold-500\/20{--tw-shadow-color:rgb(212 175 55 / 0.2);--tw-shadow:var(--tw-shadow-colored)}.shadow-gold-500\/30{--tw-shadow-color:rgb(212 175 55 / 0.3);--tw-shadow:var(--tw-shadow-colored)}.outline-none{outline:2px solid transparent;outline-offset:2px}.blur-\[120px\]{--tw-blur:blur(120px);filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.backdrop-blur-md{--tw-backdrop-blur:blur(12px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.backdrop-blur-xl{--tw-backdrop-blur:blur(24px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-colors{transition-property:color, background-color, border-color, fill, stroke, -webkit-text-decoration-color;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, -webkit-text-decoration-color;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-transform{transition-property:transform;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-opacity{transition-property:opacity;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.selection\:bg-gold-500 *::selection{--tw-bg-opacity:1;background-color:rgb(212 175 55 / var(--tw-bg-opacity, 1))}.selection\:text-obsidian *::selection{--tw-text-opacity:1;color:rgb(9 9 11 / var(--tw-text-opacity, 1))}.selection\:bg-gold-500::selection{--tw-bg-opacity:1;background-color:rgb(212 175 55 / var(--tw-bg-opacity, 1))}.selection\:text-obsidian::selection{--tw-text-opacity:1;color:rgb(9 9 11 / var(--tw-text-opacity, 1))}.file\:ml-3::file-selector-button{margin-left:0.75rem}.file\:rounded-lg::file-selector-button{border-radius:0.5rem}.file\:border-0::file-selector-button{border-width:0px}.file\:bg-gold-500::file-selector-button{--tw-bg-opacity:1;background-color:rgb(212 175 55 / var(--tw-bg-opacity, 1))}.file\:px-3::file-selector-button{padding-left:0.75rem;padding-right:0.75rem}.file\:py-1::file-selector-button{padding-top:0.25rem;padding-bottom:0.25rem}.file\:text-xs::file-selector-button{font-size:0.75rem;line-height:1rem}.file\:font-bold::file-selector-button{font-weight:700}.file\:text-obsidian::file-selector-button{--tw-text-opacity:1;color:rgb(9 9 11 / var(--tw-text-opacity, 1))}.hover\:scale-110:hover{--tw-scale-x:1.1;--tw-scale-y:1.1;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.hover\:border-emerald-500:hover{--tw-border-opacity:1;border-color:rgb(16 185 129 / var(--tw-border-opacity, 1))}.hover\:border-emerald-500\/60:hover{border-color:rgb(16 185 129 / 0.6)}.hover\:border-gold-500:hover{--tw-border-opacity:1;border-color:rgb(212 175 55 / var(--tw-border-opacity, 1))}.hover\:border-gold-500\/40:hover{border-color:rgb(212 175 55 / 0.4)}.hover\:border-gold-500\/50:hover{border-color:rgb(212 175 55 / 0.5)}.hover\:bg-emerald-400:hover{--tw-bg-opacity:1;background-color:rgb(52 211 153 / var(--tw-bg-opacity, 1))}.hover\:bg-emerald-500:hover{--tw-bg-opacity:1;background-color:rgb(16 185 129 / var(--tw-bg-opacity, 1))}.hover\:bg-emerald-600\/30:hover{background-color:rgb(5 150 105 / 0.3)}.hover\:bg-gold-500:hover{--tw-bg-opacity:1;background-color:rgb(212 175 55 / var(--tw-bg-opacity, 1))}.hover\:bg-red-500\/20:hover{background-color:rgb(239 68 68 / 0.2)}.hover\:bg-zinc-700:hover{--tw-bg-opacity:1;background-color:rgb(63 63 70 / var(--tw-bg-opacity, 1))}.hover\:bg-zinc-800:hover{--tw-bg-opacity:1;background-color:rgb(39 39 42 / var(--tw-bg-opacity, 1))}.hover\:bg-zinc-800\/70:hover{background-color:rgb(39 39 42 / 0.7)}.hover\:text-gold-400:hover{--tw-text-opacity:1;color:rgb(229 193 88 / var(--tw-text-opacity, 1))}.hover\:text-obsidian:hover{--tw-text-opacity:1;color:rgb(9 9 11 / var(--tw-text-opacity, 1))}.hover\:text-red-400:hover{--tw-text-opacity:1;color:rgb(248 113 113 / var(--tw-text-opacity, 1))}.hover\:text-white:hover{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.focus\:border-gold-500:focus{--tw-border-opacity:1;border-color:rgb(212 175 55 / var(--tw-border-opacity, 1))}.group:hover .group-hover\:-translate-x-1{--tw-translate-x:-0.25rem;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.group:hover .group-hover\:translate-y-0{--tw-translate-y:0px;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.group:hover .group-hover\:rotate-6{--tw-rotate:6deg;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.group:hover .group-hover\:scale-110{--tw-scale-x:1.1;--tw-scale-y:1.1;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.group:hover .group-hover\:text-gold-400{--tw-text-opacity:1;color:rgb(229 193 88 / var(--tw-text-opacity, 1))}.group:hover .group-hover\:underline{-webkit-text-decoration-line:underline;text-decoration-line:underline}.group:hover .group-hover\:opacity-100{opacity:1}@media (min-width: 640px){.sm\:left-8{left:2rem}.sm\:right-8{right:2rem}.sm\:inline{display:inline}.sm\:inline-flex{display:inline-flex}.sm\:h-14{height:3.5rem}.sm\:h-\[460px\]{height:460px}.sm\:w-14{width:3.5rem}.sm\:w-auto{width:auto}.sm\:flex-1{flex:1 1 0%}.sm\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.sm\:grid-cols-6{grid-template-columns:repeat(6, minmax(0, 1fr))}.sm\:flex-row{flex-direction:row}.sm\:items-center{align-items:center}.sm\:gap-3{gap:0.75rem}.sm\:gap-8{gap:2rem}.sm\:self-center{align-self:center}.sm\:border-l-2{border-left-width:2px}.sm\:border-r-0{border-right-width:0px}.sm\:p-8{padding:2rem}.sm\:p-9{padding:2.25rem}.sm\:px-6{padding-left:1.5rem;padding-right:1.5rem}.sm\:px-3\.5{padding-left:0.875rem;padding-right:0.875rem}.sm\:px-4{padding-left:1rem;padding-right:1rem}.sm\:px-5{padding-left:1.25rem;padding-right:1.25rem}.sm\:py-2\.5{padding-top:0.625rem;padding-bottom:0.625rem}.sm\:pl-4{padding-left:1rem}.sm\:pr-0{padding-right:0px}.sm\:text-2xl{font-size:1.5rem;line-height:2rem}.sm\:text-3xl{font-size:1.875rem;line-height:2.25rem}.sm\:text-4xl{font-size:2.25rem;line-height:2.5rem}.sm\:text-6xl{font-size:3.75rem;line-height:1}.sm\:text-base{font-size:1rem;line-height:1.5rem}.sm\:text-lg{font-size:1.125rem;line-height:1.75rem}.sm\:text-sm{font-size:0.875rem;line-height:1.25rem}.sm\:text-xl{font-size:1.25rem;line-height:1.75rem}.sm\:text-xs{font-size:0.75rem;line-height:1rem}}@media (min-width: 768px){.md\:inline{display:inline}.md\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.md\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.md\:flex-row{flex-direction:row}.md\:items-end{align-items:flex-end}.md\:self-auto{align-self:auto}.md\:text-right{text-align:right}}@media (min-width: 1024px){.lg\:col-span-5{grid-column:span 5 / span 5}.lg\:col-span-7{grid-column:span 7 / span 7}.lg\:flex{display:flex}.lg\:hidden{display:none}.lg\:w-72{width:18rem}.lg\:grid-cols-12{grid-template-columns:repeat(12, minmax(0, 1fr))}.lg\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.lg\:flex-row{flex-direction:row}.lg\:items-center{align-items:center}.lg\:px-8{padding-left:2rem;padding-right:2rem}.lg\:text-3xl{font-size:1.875rem;line-height:2.25rem}.lg\:text-7xl{font-size:4.5rem;line-height:1}}</style></head>
+<body class="antialiased selection:bg-gold-500 selection:text-obsidian">
+
+    <!-- ==================== NAVIGATION HEADER ==================== -->
+    <header class="fixed top-0 inset-x-0 z-40 glass-nav">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                
+                <!-- Brand Identity -->
+                <a href="#" class="flex items-center gap-3 group">
+                    <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-gold-400 to-gold-600 flex items-center justify-center text-obsidian shadow-lg shadow-gold-500/20 group-hover:rotate-6 transition-transform shrink-0">
+                        <i class="fa-solid fa-camera-retro text-xl"></i>
+                    </div>
+                    <div class="flex flex-col">
+                        <div class="flex items-center gap-1.5" dir="ltr">
+                            <span class="font-brand text-base sm:text-xl font-extrabold tracking-wider text-white leading-none">REDA AHMED</span>
+                            <span class="font-brand text-xs sm:text-sm font-bold tracking-widest gold-gradient-text leading-none border-l border-gold-500/40 pl-1.5">WEDDING</span>
+                        </div>
+                        <span class="font-editorial italic text-[10px] sm:text-xs text-gold-400/90 tracking-wide mt-1" dir="ltr">Wedding Photography &amp; High-End Color Grading</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Menu -->
+                <nav class="hidden lg:flex items-center gap-6 text-sm font-medium">
+                    <a href="#home" class="text-zinc-200 hover:text-gold-400 transition-colors">الرئيسية</a>
+                    <a href="#color-grading" class="text-zinc-200 hover:text-gold-400 transition-colors">معالجة الألوان السينمائية</a>
+                    <a href="#sessions" class="text-zinc-200 hover:text-gold-400 transition-colors">سيشنات الزفاف</a>
+                    <a href="#packages" class="text-zinc-200 hover:text-gold-400 transition-colors">الباقات</a>
+                    <a href="#contact" class="text-zinc-200 hover:text-gold-400 transition-colors">تواصل واحجز الآن</a>
+                </nav>
+
+                <!-- Action Buttons -->
+                <div class="flex items-center gap-2 sm:gap-3">
+                    <!-- Download HTML File Button -->
+                    <button onclick="downloadStandaloneWebsite()" class="px-3 py-2 sm:px-3.5 sm:py-2.5 rounded-xl bg-zinc-900 border border-zinc-700 hover:border-gold-500 text-zinc-200 hover:text-gold-400 text-xs sm:text-sm font-semibold flex items-center gap-1.5 transition-all" title="حفظ الموقع كملف على جهازك لرفعه أونلاين">
+                        <i class="fa-solid fa-download"></i>
+                        <span class="hidden md:inline">حفظ الموقع</span>
+                    </button>
+
+                    <!-- Studio Manager Button (Add/Edit Sessions) -->
+                    <button onclick="openStudioModal()" class="px-3 py-2 sm:px-4 sm:py-2.5 rounded-xl bg-zinc-900 border border-gold-500/30 hover:border-gold-500 text-gold-400 text-xs sm:text-sm font-semibold flex items-center gap-2 transition-all" title="إضافة أو تعديل السيشنات">
+                        <i class="fa-solid fa-plus-circle"></i>
+                        <span class="hidden sm:inline">إدارة السيشنات</span>
+                    </button>
+
+                    <!-- Direct Call CTA -->
+                    <a href="tel:01102741005" class="gold-btn px-3.5 py-2 sm:px-5 sm:py-2.5 rounded-xl text-xs sm:text-sm font-bold flex items-center gap-2 shadow-lg" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-solid fa-phone-volume animate-bounce"></i>
+                        <span dir="ltr">01102741005</span>
+                    </a>
+
+                    <!-- Mobile Menu Toggle -->
+                    <button onclick="toggleMobileMenu()" class="lg:hidden p-2.5 rounded-xl bg-zinc-900 text-zinc-300 hover:text-gold-400 border border-zinc-800">
+                        <i class="fa-solid fa-bars text-lg"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Drawer -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-charcoal border-b border-zinc-800 px-4 pt-2 pb-5 space-y-2">
+            <a href="#home" onclick="toggleMobileMenu()" class="block px-4 py-2.5 rounded-xl text-zinc-200 hover:bg-zinc-800/70 hover:text-gold-400">الرئيسية</a>
+            <a href="#color-grading" onclick="toggleMobileMenu()" class="block px-4 py-2.5 rounded-xl text-zinc-200 hover:bg-zinc-800/70 hover:text-gold-400">معالجة الألوان السينمائية (Color Grading)</a>
+            <a href="#sessions" onclick="toggleMobileMenu()" class="block px-4 py-2.5 rounded-xl text-zinc-200 hover:bg-zinc-800/70 hover:text-gold-400">سيشنات الزفاف (كل سيشن لوحده)</a>
+            <a href="#packages" onclick="toggleMobileMenu()" class="block px-4 py-2.5 rounded-xl text-zinc-200 hover:bg-zinc-800/70 hover:text-gold-400">باقات الزفاف الاحترافية</a>
+            <a href="#contact" onclick="toggleMobileMenu()" class="block px-4 py-2.5 rounded-xl text-zinc-200 hover:bg-zinc-800/70 hover:text-gold-400">خدمة الاتصال والحجز</a>
+        </div>
+    </header>
+
+    <!-- ==================== HERO SECTION ==================== -->
+    <section id="home" class="relative min-h-[92vh] flex items-center pt-24 pb-16 overflow-hidden">
+        <!-- Ambient Background Image & Overlays -->
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&amp;fit=crop&amp;w=1920&amp;q=80" alt="REDA AHMED WEDDING - Wedding Photography &amp; High-End Color Grading" class="w-full h-full object-cover opacity-30 scale-105" onerror="this.src='https://placehold.co/1920x1080/09090b/d4af37?text=REDA+AHMED+WEDDING'">
+            <div class="absolute inset-0 bg-gradient-to-t from-obsidian via-obsidian/80 to-obsidian/60"></div>
+            <div class="absolute inset-0 bg-gradient-to-r from-obsidian via-transparent to-obsidian/90"></div>
+        </div>
+
+        <!-- Decorative Gold Glow -->
+        <div class="absolute top-1/4 right-1/4 w-96 h-96 bg-gold-500/10 rounded-full blur-[120px] pointer-events-none"></div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+            <div class="max-w-3xl">
+                <!-- Luxury Badge -->
+                <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-zinc-900/90 border border-gold-500/30 text-gold-400 text-xs sm:text-sm font-medium mb-6 backdrop-blur-md">
+                    <span class="w-2 h-2 rounded-full bg-gold-500 animate-ping"></span>
+                    <span>تصوير زفاف احترافي ومعالجة ألوان سينمائية فاخرة</span>
+                </div>
+
+                <!-- Brand Name Display -->
+                <h1 class="font-brand text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-wider text-white mb-3 leading-tight" dir="ltr">
+                    REDA AHMED <span class="block sm:inline gold-gradient-text">WEDDING</span>
+                </h1>
+                
+                <!-- Prominent English Tagline -->
+                <div class="inline-block border-r-2 sm:border-r-0 sm:border-l-2 border-gold-500 pr-3 sm:pr-0 sm:pl-4 mb-6" dir="ltr">
+                    <p class="font-editorial italic text-xl sm:text-2xl lg:text-3xl font-semibold text-gold-400 tracking-wide">
+                        Wedding Photography &amp; High-End Color Grading
+                    </p>
+                </div>
+
+                <h2 class="text-2xl sm:text-3xl font-bold text-zinc-100 mb-5 leading-snug">
+                    نوثّق ليلة العمر بأرقى معايير التصوير الفوتوغرافي وتصحيح الألوان السينمائي
+                </h2>
+                <p class="text-zinc-400 text-base sm:text-lg leading-relaxed mb-8 max-w-2xl">
+                    مرحباً بك في الموقع الرسمي لـ <strong class="text-gold-400" dir="ltr">REDA AHMED WEDDING</strong>. استعرض جميع سيشنات الزفاف والخطوبة والبورتريه والمعالجة اللونية الاحترافية—كل سيشن معروض في ألبوم مستقل بكل تفاصيله وصوره عالية الدقة.
+                </p>
+
+                <!-- Primary CTAs -->
+                <div class="flex flex-wrap items-center gap-4">
+                    <a href="#sessions" class="gold-btn px-7 py-4 rounded-2xl font-bold text-base flex items-center gap-3 shadow-xl shadow-gold-500/15">
+                        <i class="fa-solid fa-images"></i>
+                        <span>مشاهدة السيشنات الاحترافية</span>
+                    </a>
+                    
+                    <a href="https://wa.me/201102741005?text=%D8%A3%D9%87%D9%84%D8%A7%D9%8B%20REDA%20AHMED%20WEDDING%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AD%D8%AC%D8%B2%20%D8%B3%D9%8A%D8%B4%D9%86%20%D8%AA%D8%B5%D9%88%D9%8A%D8%B1" target="_blank" class="px-7 py-4 rounded-2xl bg-emerald-600/20 hover:bg-emerald-600/30 border border-emerald-500/40 text-emerald-400 font-bold text-base flex items-center gap-3 transition-all" rel="noopener noreferrer">
+                        <i class="fa-brands fa-whatsapp text-xl"></i>
+                        <span>تواصل واتساب مباشر</span>
+                    </a>
+
+                    <a href="tel:01102741005" class="px-6 py-4 rounded-2xl bg-zinc-900/90 hover:bg-zinc-800 border border-zinc-700 text-zinc-200 font-semibold text-base flex items-center gap-3 transition-all" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-solid fa-phone text-gold-400"></i>
+                        <span dir="ltr">01102741005</span>
+                    </a>
+                </div>
+
+                <!-- Quick Stats Bar -->
+                <div class="grid grid-cols-3 gap-4 sm:gap-8 mt-12 pt-8 border-t border-zinc-800/80 max-w-xl">
+                    <div>
+                        <div class="text-2xl sm:text-3xl font-extrabold gold-gradient-text" id="statSessionsCount">+120</div>
+                        <div class="text-xs sm:text-sm text-zinc-400 mt-1">سيشن احترافي مكتمل</div>
+                    </div>
+                    <div>
+                        <div class="text-2xl sm:text-3xl font-extrabold gold-gradient-text">4K / RAW</div>
+                        <div class="text-xs sm:text-sm text-zinc-400 mt-1">أعلى جودة ومعالجة لونية</div>
+                    </div>
+                    <div>
+                        <div class="text-2xl sm:text-3xl font-extrabold gold-gradient-text">100%</div>
+                        <div class="text-xs sm:text-sm text-zinc-400 mt-1">التزام بمواعيد التسليم</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== HIGH-END COLOR GRADING BEFORE/AFTER SECTION ==================== -->
+    <section id="color-grading" class="py-20 bg-obsidian relative border-t border-zinc-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+                
+                <!-- Text & Color Grading Info (5 Cols) -->
+                <div class="lg:col-span-5 space-y-5">
+                    <span class="font-editorial italic text-gold-400 text-base sm:text-lg font-semibold tracking-wide block" dir="ltr">
+                        High-End Color Grading &amp; Retouching
+                    </span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white leading-tight">
+                        معالجة الألوان السينمائية <span class="gold-gradient-text">(قبل وبعد)</span>
+                    </h2>
+                    <p class="text-zinc-400 text-sm sm:text-base leading-relaxed">
+                        نحن لا نكتفي بالتقاط الصورة فحسب، بل نمنح كل لقطة هوية بصرية سينمائية متكاملة عبر معالجة احترافية للألوان (High-End Color Grading)، توازن الإضاءة، ونعومة البشرة الطبيعية دون فقدان التفاصيل.
+                    </p>
+
+                    <div class="space-y-3 pt-2">
+                        <div class="flex items-start gap-3">
+                            <div class="w-8 h-8 rounded-lg bg-gold-500/15 border border-gold-500/30 text-gold-400 flex items-center justify-center shrink-0 mt-0.5">
+                                <i class="fa-solid fa-wand-magic-sparkles text-sm"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-bold text-white">تناغم لوني سينمائي (Cinematic Skin Tones)</h4>
+                                <p class="text-xs text-zinc-400 mt-0.5">إبراز جمال ألوان البشرة والملابس والإضاءة المحيطة بدقة عالية.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div class="w-8 h-8 rounded-lg bg-gold-500/15 border border-gold-500/30 text-gold-400 flex items-center justify-center shrink-0 mt-0.5">
+                                <i class="fa-solid fa-eye text-sm"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-bold text-white">اسحب المؤشر للمقارنة الحية</h4>
+                                <p class="text-xs text-zinc-400 mt-0.5">حرك الخط الذهبي يميناً ويساراً لمشاهدة الفرق بين الصورة الخام (RAW) والمعالجة النهائية.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Preset Switcher Buttons -->
+                    <div class="flex flex-wrap gap-2 pt-3">
+                        <button onclick="switchGradingSample(0)" id="gradeSampleBtn0" class="grade-sample-btn px-4 py-2 rounded-xl text-xs font-bold bg-gold-500 text-obsidian transition-all">
+                            1. زفاف كلاسيك ذهبي
+                        </button>
+                        <button onclick="switchGradingSample(1)" id="gradeSampleBtn1" class="grade-sample-btn px-4 py-2 rounded-xl text-xs font-semibold bg-zinc-900 text-zinc-300 border border-zinc-800 hover:border-gold-500/40 transition-all">
+                            2. بورتريه عروس سينمائي
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Interactive Before/After Slider (7 Cols) -->
+                <div class="lg:col-span-7">
+                    <div id="comparisonContainer" class="comparison-slider-wrapper relative w-full h-[360px] sm:h-[460px] rounded-3xl border border-gold-500/30 shadow-2xl shadow-black cursor-ew-resize" dir="ltr">
+                        
+                        <!-- AFTER IMAGE (Full Layer - High-End Color Graded) -->
+                        <img id="afterGradeImg" src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&amp;fit=crop&amp;w=1200&amp;q=90" alt="After High-End Color Grading" class="absolute inset-0 w-full h-full object-cover graded-after-filter pointer-events-none">
+                        
+                        <!-- After Label -->
+                        <span class="absolute top-4 right-4 z-10 px-3.5 py-1.5 rounded-full bg-black/75 backdrop-blur-md border border-gold-500/40 text-gold-400 text-xs font-bold tracking-wider">
+                            AFTER • HIGH-END COLOR GRADING
+                        </span>
+
+                        <!-- BEFORE IMAGE (Clipped Layer - RAW Flat Profile) -->
+                        <div id="beforeClipLayer" class="absolute inset-0 overflow-hidden pointer-events-none" style="width: 50%;">
+                            <img id="beforeGradeImg" src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&amp;fit=crop&amp;w=1200&amp;q=90" alt="Before RAW Flat Photo" class="absolute inset-0 w-full h-full object-cover raw-before-filter max-w-none" style="width: 693px;">
+                            <!-- Before Label -->
+                            <span class="absolute top-4 left-4 z-10 px-3.5 py-1.5 rounded-full bg-black/75 backdrop-blur-md border border-zinc-700 text-zinc-300 text-xs font-bold tracking-wider">
+                                BEFORE • RAW CAMERA
+                            </span>
+                        </div>
+
+                        <!-- Vertical Gold Divider Line & Handle -->
+                        <div id="sliderDividerLine" class="absolute top-0 bottom-0 w-0.5 bg-gold-400 shadow-[0_0_15px_rgba(212,175,55,0.9)] pointer-events-none z-20" style="left: 50%;">
+                            <div class="absolute top-1/2 -translate-y-1/2 -translate-x-1/2 w-11 h-11 rounded-full gold-btn border-2 border-white flex items-center justify-center shadow-2xl">
+                                <i class="fa-solid fa-arrows-left-right text-sm text-obsidian"></i>
+                            </div>
+                        </div>
+
+                        <!-- Accessible Range Input Overlay for Smooth Mouse & Touch Dragging -->
+                        <input type="range" min="5" max="95" value="50" id="colorGradeRange" oninput="updateComparisonSlider(this.value)" aria-label="مقارنة قبل وبعد معالجة الألوان" class="absolute inset-0 w-full h-full opacity-0 cursor-ew-resize z-30 m-0">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SESSIONS PORTFOLIO (كل سيشن لوحده) ==================== -->
+    <section id="sessions" class="py-20 bg-charcoal relative border-t border-zinc-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Section Header -->
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+                <div>
+                    <span class="font-editorial italic text-gold-400 text-base font-semibold tracking-wide block mb-1" dir="ltr">Wedding Photography &amp; High-End Color Grading</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white">ألبومات السيشنات الاحترافية <span class="text-gold-400">(كل سيشن لوحده)</span></h2>
+                    <p class="text-zinc-400 mt-2 max-w-2xl text-sm sm:text-base">
+                        اضغط على أي سيشن لفتح الألبوم الخاص به ومشاهدة جميع الصور بجودة فائقة، كما يمكنك إضافة سيشناتك الجديدة بسهولة.
+                    </p>
+                </div>
+
+                <!-- Add New Session Quick Button -->
+                <button onclick="openStudioModal()" class="self-start md:self-auto gold-btn px-5 py-3 rounded-xl font-bold text-sm flex items-center gap-2 shadow-lg">
+                    <i class="fa-solid fa-folder-plus text-base"></i>
+                    <span>+ إضافة سيشن جديد للموقع</span>
+                </button>
+            </div>
+
+            <!-- Category Filter Tabs & Search -->
+            <div class="flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-4 mb-10">
+                <div id="categoryFilters" class="flex flex-wrap items-center gap-2">
+                    <button onclick="filterSessions('all')" data-cat="all" class="filter-btn active px-5 py-2.5 rounded-xl text-sm font-bold bg-gold-500 text-obsidian transition-all">
+                        الكل
+                    </button>
+                    <button onclick="filterSessions('wedding')" data-cat="wedding" class="filter-btn px-5 py-2.5 rounded-xl text-sm font-semibold bg-zinc-900 text-zinc-300 hover:text-gold-400 border border-zinc-800 transition-all">
+                        حفلات زفاف (Weddings)
+                    </button>
+                    <button onclick="filterSessions('engagement')" data-cat="engagement" class="filter-btn px-5 py-2.5 rounded-xl text-sm font-semibold bg-zinc-900 text-zinc-300 hover:text-gold-400 border border-zinc-800 transition-all">
+                        خطوبة وكتب كتاب
+                    </button>
+                    <button onclick="filterSessions('bridal')" data-cat="bridal" class="filter-btn px-5 py-2.5 rounded-xl text-sm font-semibold bg-zinc-900 text-zinc-300 hover:text-gold-400 border border-zinc-800 transition-all">
+                        فوتوسيشن عرائس (Bridal)
+                    </button>
+                    <button onclick="filterSessions('colorgrading')" data-cat="colorgrading" class="filter-btn px-5 py-2.5 rounded-xl text-sm font-semibold bg-zinc-900 text-zinc-300 hover:text-gold-400 border border-zinc-800 transition-all">
+                        معالجة ألوان (Color Grading)
+                    </button>
+                    <button onclick="filterSessions('portrait')" data-cat="portrait" class="filter-btn px-5 py-2.5 rounded-xl text-sm font-semibold bg-zinc-900 text-zinc-300 hover:text-gold-400 border border-zinc-800 transition-all">
+                        بورتريه وفاشون
+                    </button>
+                </div>
+
+                <!-- Search Input -->
+                <div class="relative w-full lg:w-72">
+                    <input type="text" id="sessionSearchInput" oninput="renderSessionsGrid()" placeholder="ابحث باسم العروسين أو المكان..." class="w-full bg-zinc-900/90 border border-zinc-800 focus:border-gold-500 rounded-xl py-2.5 pr-10 pl-4 text-sm text-white placeholder-zinc-500 outline-none transition-colors">
+                    <i class="fa-solid fa-magnifying-glass absolute right-3.5 top-1/2 -translate-y-1/2 text-zinc-500 text-sm"></i>
+                </div>
+            </div>
+
+            <!-- Sessions Grid Container -->
+            <div id="sessionsGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7"><article class="glass-card rounded-3xl overflow-hidden flex flex-col justify-between group cursor-pointer">
+                    <div>
+                        <!-- Cover Image Container -->
+                        <div class="relative h-72 overflow-hidden bg-zinc-900">
+                            <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&amp;fit=crop&amp;w=1000&amp;q=85" alt="سيشن زفاف ملكي — عمر &amp; سلمى" loading="lazy" onerror="this.src='https://placehold.co/800x600/18181d/d4af37?text=REDA+AHMED'" class="w-full h-full object-cover session-img-zoom">
+                            
+                            <!-- Gradient Overlay -->
+                            <div class="absolute inset-0 bg-gradient-to-t from-cardbg via-transparent to-black/40"></div>
+
+                            <!-- Top Badges -->
+                            <div class="absolute top-4 right-4 left-4 flex items-center justify-between gap-2">
+                                <span class="px-3 py-1 rounded-full bg-black/70 backdrop-blur-md border border-gold-500/30 text-gold-400 text-xs font-bold">
+                                    حفلات زفاف (Weddings)
+                                </span>
+                                <span class="px-3 py-1 rounded-full bg-black/70 backdrop-blur-md text-white text-xs font-semibold flex items-center gap-1.5">
+                                    <i class="fa-regular fa-images text-gold-400"></i>
+                                    <span>4 صور</span>
+                                </span>
+                            </div>
+
+                            <!-- Hover Overlay Action -->
+                            <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                                <span class="px-5 py-2.5 rounded-full gold-btn font-extrabold text-xs shadow-xl transform translate-y-3 group-hover:translate-y-0 transition-transform flex items-center gap-2">
+                                    <i class="fa-solid fa-eye"></i>
+                                    <span>فتح ألبوم السيشن</span>
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- Session Details -->
+                        <div class="p-6">
+                            <div class="text-xs text-zinc-400 flex items-center gap-1.5 mb-2">
+                                <i class="fa-solid fa-location-dot text-gold-400"></i>
+                                <span>قصر محمد علي • القاهرة</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-white group-hover:text-gold-400 transition-colors line-clamp-1 mb-2">
+                                سيشن زفاف ملكي — عمر &amp; سلمى
+                            </h3>
+                            <p class="text-zinc-400 text-sm line-clamp-2 leading-relaxed">
+                                تغطية احترافية كاملة لسيشن الزفاف بإضاءة سينمائية دافئة تجمع بين عراقة القصور الملكية ورومانسية اللحظات العفوية.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Card Footer -->
+                    <div class="px-6 pb-6 pt-2 flex items-center justify-between border-t border-zinc-800/60 mt-2">
+                        <span class="text-xs font-bold text-gold-400 group-hover:underline flex items-center gap-1.5">
+                            <span>عرض السيشن كامل</span>
+                            <i class="fa-solid fa-arrow-left text-[10px]"></i>
+                        </span>
+                        <a href="https://wa.me/201102741005?text=%D8%A3%D9%87%D9%84%D8%A7%D9%8B%20%D8%B1%D8%B6%D8%A7%20%D8%A3%D8%AD%D9%85%D8%AF%D8%8C%20%D8%A3%D8%B9%D8%AC%D8%A8%D9%86%D9%8A%20%22%D8%B3%D9%8A%D8%B4%D9%86%20%D8%B2%D9%81%D8%A7%D9%81%20%D9%85%D9%84%D9%83%D9%8A%20%E2%80%94%20%D8%B9%D9%85%D8%B1%20%26%20%D8%B3%D9%84%D9%85%D9%89%22%20%D9%88%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AD%D8%AC%D8%B2%20%D8%B3%D9%8A%D8%B4%D9%86%20%D9%85%D8%B4%D8%A7%D8%A8%D9%87" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()" class="w-9 h-9 rounded-xl bg-emerald-500/15 hover:bg-emerald-500 text-emerald-400 hover:text-white flex items-center justify-center transition-colors" title="احجز سيشن مشابه عبر واتساب">
+                            <i class="fa-brands fa-whatsapp text-base"></i>
+                        </a>
+                    </div>
+                </article><article class="glass-card rounded-3xl overflow-hidden flex flex-col justify-between group cursor-pointer">
+                    <div>
+                        <!-- Cover Image Container -->
+                        <div class="relative h-72 overflow-hidden bg-zinc-900">
+                            <img src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?auto=format&amp;fit=crop&amp;w=1000&amp;q=85" alt="سيشن خطوبة على النيل — طارق &amp; مريم" loading="lazy" onerror="this.src='https://placehold.co/800x600/18181d/d4af37?text=REDA+AHMED'" class="w-full h-full object-cover session-img-zoom">
+                            
+                            <!-- Gradient Overlay -->
+                            <div class="absolute inset-0 bg-gradient-to-t from-cardbg via-transparent to-black/40"></div>
+
+                            <!-- Top Badges -->
+                            <div class="absolute top-4 right-4 left-4 flex items-center justify-between gap-2">
+                                <span class="px-3 py-1 rounded-full bg-black/70 backdrop-blur-md border border-gold-500/30 text-gold-400 text-xs font-bold">
+                                    خطوبة وكتب كتاب
+                                </span>
+                                <span class="px-3 py-1 rounded-full bg-black/70 backdrop-blur-md text-white text-xs font-semibold flex items-center gap-1.5">
+                                    <i class="fa-regular fa-images text-gold-400"></i>
+                                    <span>3 صور</span>
+                                </span>
+                            </div>
+
+                            <!-- Hover Overlay Action -->
+                            <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                                <span class="px-5 py-2.5 rounded-full gold-btn font-extrabold text-xs shadow-xl transform translate-y-3 group-hover:translate-y-0 transition-transform flex items-center gap-2">
+                                    <i class="fa-solid fa-eye"></i>
+                                    <span>فتح ألبوم السيشن</span>
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- Session Details -->
+                        <div class="p-6">
+                            <div class="text-xs text-zinc-400 flex items-center gap-1.5 mb-2">
+                                <i class="fa-solid fa-location-dot text-gold-400"></i>
+                                <span>كورنيش النيل • الزمالك</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-white group-hover:text-gold-400 transition-colors line-clamp-1 mb-2">
+                                سيشن خطوبة على النيل — طارق &amp; مريم
+                            </h3>
+                            <p class="text-zinc-400 text-sm line-clamp-2 leading-relaxed">
+                                أجواء مبهجة ولقطات عفوية توثق فرحة الخطوبة وقت الغروب مع معالجة لونية احترافية تبرز تفاصيل الفرحة.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Card Footer -->
+                    <div class="px-6 pb-6 pt-2 flex items-center justify-between border-t border-zinc-800/60 mt-2">
+                        <span class="text-xs font-bold text-gold-400 group-hover:underline flex items-center gap-1.5">
+                            <span>عرض السيشن كامل</span>
+                            <i class="fa-solid fa-arrow-left text-[10px]"></i>
+                        </span>
+                        <a href="https://wa.me/201102741005?text=%D8%A3%D9%87%D9%84%D8%A7%D9%8B%20%D8%B1%D8%B6%D8%A7%20%D8%A3%D8%AD%D9%85%D8%AF%D8%8C%20%D8%A3%D8%B9%D8%AC%D8%A8%D9%86%D9%8A%20%22%D8%B3%D9%8A%D8%B4%D9%86%20%D8%AE%D8%B7%D9%88%D8%A8%D8%A9%20%D8%B9%D9%84%D9%89%20%D8%A7%D9%84%D9%86%D9%8A%D9%84%20%E2%80%94%20%D8%B7%D8%A7%D8%B1%D9%82%20%26%20%D9%85%D8%B1%D9%8A%D9%85%22%20%D9%88%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AD%D8%AC%D8%B2%20%D8%B3%D9%8A%D8%B4%D9%86%20%D9%85%D8%B4%D8%A7%D8%A8%D9%87" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()" class="w-9 h-9 rounded-xl bg-emerald-500/15 hover:bg-emerald-500 text-emerald-400 hover:text-white flex items-center justify-center transition-colors" title="احجز سيشن مشابه عبر واتساب">
+                            <i class="fa-brands fa-whatsapp text-base"></i>
+                        </a>
+                    </div>
+                </article><article class="glass-card rounded-3xl overflow-hidden flex flex-col justify-between group cursor-pointer">
+                    <div>
+                        <!-- Cover Image Container -->
+                        <div class="relative h-72 overflow-hidden bg-zinc-900">
+                            <img src="https://images.unsplash.com/photo-1594552072238-b8a33785b261?auto=format&amp;fit=crop&amp;w=1000&amp;q=85" alt="فوتوسيشن عروس — Royal Bridal Look" loading="lazy" onerror="this.src='https://placehold.co/800x600/18181d/d4af37?text=REDA+AHMED'" class="w-full h-full object-cover session-img-zoom">
+                            
+                            <!-- Gradient Overlay -->
+                            <div class="absolute inset-0 bg-gradient-to-t from-cardbg via-transparent to-black/40"></div>
+
+                            <!-- Top Badges -->
+                            <div class="absolute top-4 right-4 left-4 flex items-center justify-between gap-2">
+                                <span class="px-3 py-1 rounded-full bg-black/70 backdrop-blur-md border border-gold-500/30 text-gold-400 text-xs font-bold">
+                                    فوتوسيشن عرائس (Bridal)
+                                </span>
+                                <span class="px-3 py-1 rounded-full bg-black/70 backdrop-blur-md text-white text-xs font-semibold flex items-center gap-1.5">
+                                    <i class="fa-regular fa-images text-gold-400"></i>
+                                    <span>3 صور</span>
+                                </span>
+                            </div>
+
+                            <!-- Hover Overlay Action -->
+                            <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                                <span class="px-5 py-2.5 rounded-full gold-btn font-extrabold text-xs shadow-xl transform translate-y-3 group-hover:translate-y-0 transition-transform flex items-center gap-2">
+                                    <i class="fa-solid fa-eye"></i>
+                                    <span>فتح ألبوم السيشن</span>
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- Session Details -->
+                        <div class="p-6">
+                            <div class="text-xs text-zinc-400 flex items-center gap-1.5 mb-2">
+                                <i class="fa-solid fa-location-dot text-gold-400"></i>
+                                <span>فندق ماريوت • القاهرة</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-white group-hover:text-gold-400 transition-colors line-clamp-1 mb-2">
+                                فوتوسيشن عروس — Royal Bridal Look
+                            </h3>
+                            <p class="text-zinc-400 text-sm line-clamp-2 leading-relaxed">
+                                جلسة تصوير خاصة للعروس (Bridal Session) لإبراز فخامة الفستان والتفاصيل الدقيقة بإضاءة استوديو ناعمة.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Card Footer -->
+                    <div class="px-6 pb-6 pt-2 flex items-center justify-between border-t border-zinc-800/60 mt-2">
+                        <span class="text-xs font-bold text-gold-400 group-hover:underline flex items-center gap-1.5">
+                            <span>عرض السيشن كامل</span>
+                            <i class="fa-solid fa-arrow-left text-[10px]"></i>
+                        </span>
+                        <a href="https://wa.me/201102741005?text=%D8%A3%D9%87%D9%84%D8%A7%D9%8B%20%D8%B1%D8%B6%D8%A7%20%D8%A3%D8%AD%D9%85%D8%AF%D8%8C%20%D8%A3%D8%B9%D8%AC%D8%A8%D9%86%D9%8A%20%22%D9%81%D9%88%D8%AA%D9%88%D8%B3%D9%8A%D8%B4%D9%86%20%D8%B9%D8%B1%D9%88%D8%B3%20%E2%80%94%20Royal%20Bridal%20Look%22%20%D9%88%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AD%D8%AC%D8%B2%20%D8%B3%D9%8A%D8%B4%D9%86%20%D9%85%D8%B4%D8%A7%D8%A8%D9%87" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()" class="w-9 h-9 rounded-xl bg-emerald-500/15 hover:bg-emerald-500 text-emerald-400 hover:text-white flex items-center justify-center transition-colors" title="احجز سيشن مشابه عبر واتساب">
+                            <i class="fa-brands fa-whatsapp text-base"></i>
+                        </a>
+                    </div>
+                </article><article class="glass-card rounded-3xl overflow-hidden flex flex-col justify-between group cursor-pointer">
+                    <div>
+                        <!-- Cover Image Container -->
+                        <div class="relative h-72 overflow-hidden bg-zinc-900">
+                            <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&amp;fit=crop&amp;w=1000&amp;q=85" alt="حفل زفاف مسائي — يوسف &amp; نادين" loading="lazy" onerror="this.src='https://placehold.co/800x600/18181d/d4af37?text=REDA+AHMED'" class="w-full h-full object-cover session-img-zoom">
+                            
+                            <!-- Gradient Overlay -->
+                            <div class="absolute inset-0 bg-gradient-to-t from-cardbg via-transparent to-black/40"></div>
+
+                            <!-- Top Badges -->
+                            <div class="absolute top-4 right-4 left-4 flex items-center justify-between gap-2">
+                                <span class="px-3 py-1 rounded-full bg-black/70 backdrop-blur-md border border-gold-500/30 text-gold-400 text-xs font-bold">
+                                    حفلات زفاف (Weddings)
+                                </span>
+                                <span class="px-3 py-1 rounded-full bg-black/70 backdrop-blur-md text-white text-xs font-semibold flex items-center gap-1.5">
+                                    <i class="fa-regular fa-images text-gold-400"></i>
+                                    <span>3 صور</span>
+                                </span>
+                            </div>
+
+                            <!-- Hover Overlay Action -->
+                            <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                                <span class="px-5 py-2.5 rounded-full gold-btn font-extrabold text-xs shadow-xl transform translate-y-3 group-hover:translate-y-0 transition-transform flex items-center gap-2">
+                                    <i class="fa-solid fa-eye"></i>
+                                    <span>فتح ألبوم السيشن</span>
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- Session Details -->
+                        <div class="p-6">
+                            <div class="text-xs text-zinc-400 flex items-center gap-1.5 mb-2">
+                                <i class="fa-solid fa-location-dot text-gold-400"></i>
+                                <span>التجمع الخامس • القاهرة الجديدة</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-white group-hover:text-gold-400 transition-colors line-clamp-1 mb-2">
+                                حفل زفاف مسائي — يوسف &amp; نادين
+                            </h3>
+                            <p class="text-zinc-400 text-sm line-clamp-2 leading-relaxed">
+                                تغطية شاملة لحفل الزفاف والـ First Dance بإضاءات احترافية تمنح كل صورة طابعاً سينمائياً خالداً.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Card Footer -->
+                    <div class="px-6 pb-6 pt-2 flex items-center justify-between border-t border-zinc-800/60 mt-2">
+                        <span class="text-xs font-bold text-gold-400 group-hover:underline flex items-center gap-1.5">
+                            <span>عرض السيشن كامل</span>
+                            <i class="fa-solid fa-arrow-left text-[10px]"></i>
+                        </span>
+                        <a href="https://wa.me/201102741005?text=%D8%A3%D9%87%D9%84%D8%A7%D9%8B%20%D8%B1%D8%B6%D8%A7%20%D8%A3%D8%AD%D9%85%D8%AF%D8%8C%20%D8%A3%D8%B9%D8%AC%D8%A8%D9%86%D9%8A%20%22%D8%AD%D9%81%D9%84%20%D8%B2%D9%81%D8%A7%D9%81%20%D9%85%D8%B3%D8%A7%D8%A6%D9%8A%20%E2%80%94%20%D9%8A%D9%88%D8%B3%D9%81%20%26%20%D9%86%D8%A7%D8%AF%D9%8A%D9%86%22%20%D9%88%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AD%D8%AC%D8%B2%20%D8%B3%D9%8A%D8%B4%D9%86%20%D9%85%D8%B4%D8%A7%D8%A8%D9%87" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()" class="w-9 h-9 rounded-xl bg-emerald-500/15 hover:bg-emerald-500 text-emerald-400 hover:text-white flex items-center justify-center transition-colors" title="احجز سيشن مشابه عبر واتساب">
+                            <i class="fa-brands fa-whatsapp text-base"></i>
+                        </a>
+                    </div>
+                </article><article class="glass-card rounded-3xl overflow-hidden flex flex-col justify-between group cursor-pointer">
+                    <div>
+                        <!-- Cover Image Container -->
+                        <div class="relative h-72 overflow-hidden bg-zinc-900">
+                            <img src="https://images.unsplash.com/photo-1525258946800-98cfd641d0de?auto=format&amp;fit=crop&amp;w=1000&amp;q=85" alt="معالجة ألوان سينمائية — High-End Color Grading" loading="lazy" onerror="this.src='https://placehold.co/800x600/18181d/d4af37?text=REDA+AHMED'" class="w-full h-full object-cover session-img-zoom">
+                            
+                            <!-- Gradient Overlay -->
+                            <div class="absolute inset-0 bg-gradient-to-t from-cardbg via-transparent to-black/40"></div>
+
+                            <!-- Top Badges -->
+                            <div class="absolute top-4 right-4 left-4 flex items-center justify-between gap-2">
+                                <span class="px-3 py-1 rounded-full bg-black/70 backdrop-blur-md border border-gold-500/30 text-gold-400 text-xs font-bold">
+                                    معالجة ألوان (Color Grading)
+                                </span>
+                                <span class="px-3 py-1 rounded-full bg-black/70 backdrop-blur-md text-white text-xs font-semibold flex items-center gap-1.5">
+                                    <i class="fa-regular fa-images text-gold-400"></i>
+                                    <span>3 صور</span>
+                                </span>
+                            </div>
+
+                            <!-- Hover Overlay Action -->
+                            <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                                <span class="px-5 py-2.5 rounded-full gold-btn font-extrabold text-xs shadow-xl transform translate-y-3 group-hover:translate-y-0 transition-transform flex items-center gap-2">
+                                    <i class="fa-solid fa-eye"></i>
+                                    <span>فتح ألبوم السيشن</span>
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- Session Details -->
+                        <div class="p-6">
+                            <div class="text-xs text-zinc-400 flex items-center gap-1.5 mb-2">
+                                <i class="fa-solid fa-location-dot text-gold-400"></i>
+                                <span>REDA AHMED Color Lab</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-white group-hover:text-gold-400 transition-colors line-clamp-1 mb-2">
+                                معالجة ألوان سينمائية — High-End Color Grading
+                            </h3>
+                            <p class="text-zinc-400 text-sm line-clamp-2 leading-relaxed">
+                                نماذج من معالجة الألوان الاحترافية وتصحيح الإضاءة والـ Skin Tones لإخراج الصور بطابع سينمائي عالمي.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Card Footer -->
+                    <div class="px-6 pb-6 pt-2 flex items-center justify-between border-t border-zinc-800/60 mt-2">
+                        <span class="text-xs font-bold text-gold-400 group-hover:underline flex items-center gap-1.5">
+                            <span>عرض السيشن كامل</span>
+                            <i class="fa-solid fa-arrow-left text-[10px]"></i>
+                        </span>
+                        <a href="https://wa.me/201102741005?text=%D8%A3%D9%87%D9%84%D8%A7%D9%8B%20%D8%B1%D8%B6%D8%A7%20%D8%A3%D8%AD%D9%85%D8%AF%D8%8C%20%D8%A3%D8%B9%D8%AC%D8%A8%D9%86%D9%8A%20%22%D9%85%D8%B9%D8%A7%D9%84%D8%AC%D8%A9%20%D8%A3%D9%84%D9%88%D8%A7%D9%86%20%D8%B3%D9%8A%D9%86%D9%85%D8%A7%D8%A6%D9%8A%D8%A9%20%E2%80%94%20High-End%20Color%20Grading%22%20%D9%88%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AD%D8%AC%D8%B2%20%D8%B3%D9%8A%D8%B4%D9%86%20%D9%85%D8%B4%D8%A7%D8%A8%D9%87" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()" class="w-9 h-9 rounded-xl bg-emerald-500/15 hover:bg-emerald-500 text-emerald-400 hover:text-white flex items-center justify-center transition-colors" title="احجز سيشن مشابه عبر واتساب">
+                            <i class="fa-brands fa-whatsapp text-base"></i>
+                        </a>
+                    </div>
+                </article><article class="glass-card rounded-3xl overflow-hidden flex flex-col justify-between group cursor-pointer">
+                    <div>
+                        <!-- Cover Image Container -->
+                        <div class="relative h-72 overflow-hidden bg-zinc-900">
+                            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&amp;fit=crop&amp;w=1000&amp;q=85" alt="بورتريه الإضاءة الذهبية — Golden Editorial" loading="lazy" onerror="this.src='https://placehold.co/800x600/18181d/d4af37?text=REDA+AHMED'" class="w-full h-full object-cover session-img-zoom">
+                            
+                            <!-- Gradient Overlay -->
+                            <div class="absolute inset-0 bg-gradient-to-t from-cardbg via-transparent to-black/40"></div>
+
+                            <!-- Top Badges -->
+                            <div class="absolute top-4 right-4 left-4 flex items-center justify-between gap-2">
+                                <span class="px-3 py-1 rounded-full bg-black/70 backdrop-blur-md border border-gold-500/30 text-gold-400 text-xs font-bold">
+                                    بورتريه وفاشون
+                                </span>
+                                <span class="px-3 py-1 rounded-full bg-black/70 backdrop-blur-md text-white text-xs font-semibold flex items-center gap-1.5">
+                                    <i class="fa-regular fa-images text-gold-400"></i>
+                                    <span>3 صور</span>
+                                </span>
+                            </div>
+
+                            <!-- Hover Overlay Action -->
+                            <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                                <span class="px-5 py-2.5 rounded-full gold-btn font-extrabold text-xs shadow-xl transform translate-y-3 group-hover:translate-y-0 transition-transform flex items-center gap-2">
+                                    <i class="fa-solid fa-eye"></i>
+                                    <span>فتح ألبوم السيشن</span>
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- Session Details -->
+                        <div class="p-6">
+                            <div class="text-xs text-zinc-400 flex items-center gap-1.5 mb-2">
+                                <i class="fa-solid fa-location-dot text-gold-400"></i>
+                                <span>REDA AHMED WEDDING Studio</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-white group-hover:text-gold-400 transition-colors line-clamp-1 mb-2">
+                                بورتريه الإضاءة الذهبية — Golden Editorial
+                            </h3>
+                            <p class="text-zinc-400 text-sm line-clamp-2 leading-relaxed">
+                                جلسة تصوير بورتريه وفاشون احترافية تعتمد على توزيع الإضاءة السينمائية وإبراز ملامح الشخصية بأناقة.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Card Footer -->
+                    <div class="px-6 pb-6 pt-2 flex items-center justify-between border-t border-zinc-800/60 mt-2">
+                        <span class="text-xs font-bold text-gold-400 group-hover:underline flex items-center gap-1.5">
+                            <span>عرض السيشن كامل</span>
+                            <i class="fa-solid fa-arrow-left text-[10px]"></i>
+                        </span>
+                        <a href="https://wa.me/201102741005?text=%D8%A3%D9%87%D9%84%D8%A7%D9%8B%20%D8%B1%D8%B6%D8%A7%20%D8%A3%D8%AD%D9%85%D8%AF%D8%8C%20%D8%A3%D8%B9%D8%AC%D8%A8%D9%86%D9%8A%20%22%D8%A8%D9%88%D8%B1%D8%AA%D8%B1%D9%8A%D9%87%20%D8%A7%D9%84%D8%A5%D8%B6%D8%A7%D8%A1%D8%A9%20%D8%A7%D9%84%D8%B0%D9%87%D8%A8%D9%8A%D8%A9%20%E2%80%94%20Golden%20Editorial%22%20%D9%88%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AD%D8%AC%D8%B2%20%D8%B3%D9%8A%D8%B4%D9%86%20%D9%85%D8%B4%D8%A7%D8%A8%D9%87" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()" class="w-9 h-9 rounded-xl bg-emerald-500/15 hover:bg-emerald-500 text-emerald-400 hover:text-white flex items-center justify-center transition-colors" title="احجز سيشن مشابه عبر واتساب">
+                            <i class="fa-brands fa-whatsapp text-base"></i>
+                        </a>
+                    </div>
+                </article></div>
+
+            <!-- Empty State (if search/filter yields no results) -->
+            <div id="emptySessionsState" class="hidden text-center py-16 bg-zinc-900/40 rounded-3xl border border-zinc-800/80">
+                <div class="w-16 h-16 rounded-2xl bg-zinc-800/80 text-gold-400 flex items-center justify-center mx-auto mb-4 text-2xl">
+                    <i class="fa-regular fa-images"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-2">لا توجد سيشنات مطابقة لبحثك</h3>
+                <p class="text-zinc-400 text-sm mb-6">جرب اختيار تصنيف آخر أو أضف سيشن جديد الآن.</p>
+                <button onclick="filterSessions('all')" class="px-6 py-2.5 rounded-xl bg-zinc-800 hover:bg-zinc-700 text-white text-sm font-semibold">
+                    عرض جميع السيشنات
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== PACKAGES & SERVICES SECTION ==================== -->
+    <section id="packages" class="py-20 bg-obsidian relative border-t border-zinc-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-14">
+                <span class="text-gold-400 text-sm font-bold tracking-wider uppercase block mb-2" dir="ltr">PROFESSIONAL WEDDING PACKAGES</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white mb-4">باقات الزفاف والسيشنات الاحترافية</h2>
+                <p class="text-zinc-400 text-sm sm:text-base">
+                    باقات مصممة بعناية لتغطية أجمل تفاصيل يومك بأعلى جودة تصوير فوتوغرافي وفيديو سينمائي.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-7">
+                <!-- Package 1 -->
+                <div class="glass-card rounded-3xl p-7 flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-2xl bg-gold-500/10 border border-gold-500/30 text-gold-400 flex items-center justify-center text-xl mb-5">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">باقة الخطوبة وكتب الكتاب</h3>
+                        <p class="text-zinc-400 text-sm mb-6">مثالية لجلسات الخطوبة، كتب الكتاب، والفوتوسيشن الخارجي.</p>
+                        <ul class="space-y-3 text-sm text-zinc-300 mb-8">
+                            <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-gold-400"></i><span>سيشن خارجي + تغطية كتب الكتاب أو الحفل</span></li>
+                            <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-gold-400"></i><span>تسليم 40 صورة معالجة احترافية (High-End Retouch)</span></li>
+                            <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-gold-400"></i><span>إضاءات احترافية متكاملة للوكيشن</span></li>
+                            <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-gold-400"></i><span>تسليم جميع الصور الأصلية بأعلى جودة</span></li>
+                        </ul>
+                    </div>
+                    <button onclick="quickBookPackage('باقة الخطوبة وكتب الكتاب')" class="w-full py-3.5 rounded-xl bg-zinc-900 hover:bg-gold-500 hover:text-obsidian text-gold-400 border border-gold-500/30 font-bold text-sm transition-all">
+                        استفسر واحجز الباقة
+                    </button>
+                </div>
+
+                <!-- Package 2 (Featured) -->
+                <div class="glass-card rounded-3xl p-7 flex flex-col justify-between relative border-gold-500/50 shadow-2xl shadow-gold-500/10">
+                    <div class="absolute -top-3.5 left-6 px-4 py-1 rounded-full gold-btn text-xs font-extrabold shadow-md">
+                        باقة العروسين المفضلة
+                    </div>
+                    <div>
+                        <div class="w-12 h-12 rounded-2xl bg-gold-500 text-obsidian flex items-center justify-center text-xl mb-5 shadow-lg shadow-gold-500/30">
+                            <i class="fa-solid fa-crown"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">باقة الزفاف الملكية VIP Wedding</h3>
+                        <p class="text-zinc-400 text-sm mb-6">تغطية شاملة من تحضيرات العروسين حتى نهاية الحفل بأحدث المعدات.</p>
+                        <ul class="space-y-3 text-sm text-zinc-200 mb-8">
+                            <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-gold-400"></i><span>تغطية تحضيرات العروسين + سيشن الزفاف + القاعة</span></li>
+                            <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-gold-400"></i><span>عدد غير محدود من الصور + 100 صورة معالجة فاخرة</span></li>
+                            <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-gold-400"></i><span>فيديو برومو وريلز (Reels) سينمائي 4K</span></li>
+                            <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-gold-400"></i><span>فوتوبوك زفاف فاخر + تابلوه خشبي هدية</span></li>
+                        </ul>
+                    </div>
+                    <button onclick="quickBookPackage('باقة الزفاف الملكية VIP Wedding')" class="w-full py-3.5 rounded-xl gold-btn font-extrabold text-sm shadow-lg">
+                        احجز موعد زفافك الآن
+                    </button>
+                </div>
+
+                <!-- Package 3 -->
+                <div class="glass-card rounded-3xl p-7 flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-2xl bg-gold-500/10 border border-gold-500/30 text-gold-400 flex items-center justify-center text-xl mb-5">
+                            <i class="fa-solid fa-camera"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">سيشن بورتريه وإطلالات احترافي</h3>
+                        <p class="text-zinc-400 text-sm mb-6">جلسات تصوير فردية، فاشون، أعياد ميلاد، وصناع المحتوى.</p>
+                        <ul class="space-y-3 text-sm text-zinc-300 mb-8">
+                            <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-gold-400"></i><span>مدة السيشن تصل إلى ساعتين كاملتين</span></li>
+                            <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-gold-400"></i><span>تسليم 25 صورة بتعديل ألوان سينمائي</span></li>
+                            <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-gold-400"></i><span>إمكانية التصوير في أكثر من لوكيشن</span></li>
+                            <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-gold-400"></i><span>تسليم سريع خلال 48 ساعة</span></li>
+                        </ul>
+                    </div>
+                    <button onclick="quickBookPackage('سيشن بورتريه وإطلالات احترافي')" class="w-full py-3.5 rounded-xl bg-zinc-900 hover:bg-gold-500 hover:text-obsidian text-gold-400 border border-gold-500/30 font-bold text-sm transition-all">
+                        احجز السيشن الخاص بك
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CONTACT & DIRECT BOOKING SECTION ==================== -->
+    <section id="contact" class="py-20 bg-charcoal relative border-t border-zinc-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+                
+                <!-- Left Column: Direct Contact Info & Cards (5 Cols) -->
+                <div class="lg:col-span-5 space-y-6">
+                    <div>
+                        <span class="text-gold-400 text-sm font-bold tracking-wider uppercase block mb-2">خدمة الاتصال والحجز السريع</span>
+                        <h2 class="text-2xl sm:text-3xl font-extrabold text-white mb-4">تواصل مع <span class="font-brand gold-gradient-text block sm:inline mt-1" dir="ltr">REDA AHMED WEDDING</span></h2>
+                        <p class="text-zinc-400 text-sm sm:text-base leading-relaxed">
+                            نسعد بالرد على جميع استفساراتكم وحجوزات حفلات الزفاف والسيشنات على مدار الساعة. اختر وسيلة التواصل الأسرع لك:
+                        </p>
+                    </div>
+
+                    <!-- Phone Call Card -->
+                    <div class="glass-card rounded-2xl p-5 flex items-center justify-between gap-4">
+                        <div class="flex items-center gap-4">
+                            <div class="w-14 h-14 rounded-2xl bg-gold-500/15 border border-gold-500/30 text-gold-400 flex items-center justify-center text-2xl shrink-0">
+                                <i class="fa-solid fa-phone-volume"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-zinc-400 font-medium">اتصال هاتفي مباشر</div>
+                                <a href="tel:01102741005" class="text-xl sm:text-2xl font-extrabold text-white hover:text-gold-400 transition-colors tracking-wider block mt-0.5" dir="ltr" target="_blank" rel="noopener noreferrer">
+                                    01102741005
+                                </a>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <a href="tel:01102741005" class="px-4 py-2 rounded-xl gold-btn text-xs font-extrabold text-center" target="_blank" rel="noopener noreferrer">
+                                اتصل الآن
+                            </a>
+                            <button onclick="copyPhoneNumber()" class="px-4 py-1.5 rounded-xl bg-zinc-800 hover:bg-zinc-700 text-zinc-300 text-xs font-medium flex items-center justify-center gap-1.5 transition-colors">
+                                <i class="fa-regular fa-copy"></i>
+                                <span>نسخ الرقم</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- WhatsApp Direct Card -->
+                    <a href="https://wa.me/201102741005?text=%D8%A3%D9%87%D9%84%D8%A7%D9%8B%20REDA%20AHMED%20WEDDING%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%AD%D8%AC%D8%B2%20%D8%B3%D9%8A%D8%B4%D9%86%20%D8%AA%D8%B5%D9%88%D9%8A%D8%B1" target="_blank" rel="noopener noreferrer" class="glass-card rounded-2xl p-5 flex items-center justify-between gap-4 border-emerald-500/25 hover:border-emerald-500/60 group block">
+                        <div class="flex items-center gap-4">
+                            <div class="w-14 h-14 rounded-2xl bg-emerald-500/15 border border-emerald-500/30 text-emerald-400 flex items-center justify-center text-3xl shrink-0 group-hover:scale-110 transition-transform">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-emerald-400 font-semibold">متاح للرد السريع عبر واتساب</div>
+                                <div class="text-lg sm:text-xl font-bold text-white mt-0.5" dir="ltr">01102741005</div>
+                                <div class="text-xs text-zinc-400 mt-0.5">اضغط لبدء محادثة فورية</div>
+                            </div>
+                        </div>
+                        <div class="w-10 h-10 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center group-hover:-translate-x-1 transition-transform">
+                            <i class="fa-solid fa-arrow-left"></i>
+                        </div>
+                    </a>
+
+                    <!-- Working Hours & Location Info -->
+                    <div class="p-5 rounded-2xl bg-zinc-900/60 border border-zinc-800/80 space-y-3 text-sm">
+                        <div class="flex items-center gap-3 text-zinc-300">
+                            <i class="fa-solid fa-location-dot text-gold-400 w-5 text-center"></i>
+                            <span>متاحون لتصوير حفلات الزفاف والسيشنات في جميع المحافظات</span>
+                        </div>
+                        <div class="flex items-center gap-3 text-zinc-300">
+                            <i class="fa-regular fa-clock text-gold-400 w-5 text-center"></i>
+                            <span>مواعيد العمل: يومياً من 10:00 صباحاً حتى 11:00 مساءً</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Interactive Booking Form (7 Cols) -->
+                <div class="lg:col-span-7">
+                    <div class="glass-card rounded-3xl p-6 sm:p-9 border-gold-500/20">
+                        <div class="flex items-center justify-between mb-6 pb-4 border-b border-zinc-800">
+                            <div>
+                                <h3 class="text-2xl font-bold text-white">نموذج حجز زفاف أو سيشن تصوير</h3>
+                                <p class="text-xs sm:text-sm text-zinc-400 mt-1">املأ البيانات وسيتم تحويل تفاصيل حجزك مباشرة إلى واتساب <span dir="ltr">REDA AHMED WEDDING</span></p>
+                            </div>
+                            <span class="hidden sm:inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-gold-500/10 text-gold-400 text-xs font-bold">
+                                <i class="fa-solid fa-bolt"></i> حجز فوري
+                            </span>
+                        </div>
+
+                        <form id="bookingForm" onsubmit="handleBookingSubmit(event)" class="space-y-5">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                                <div>
+                                    <label class="block text-xs font-bold text-zinc-300 mb-2">الاسم بالكامل *</label>
+                                    <input type="text" id="clientName" required="" placeholder="مثال: أحمد محمود" class="w-full bg-zinc-900/90 border border-zinc-700/80 focus:border-gold-500 rounded-xl px-4 py-3 text-sm text-white placeholder-zinc-500 outline-none transition-colors">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-bold text-zinc-300 mb-2">رقم الهاتف / واتساب *</label>
+                                    <input type="tel" id="clientPhone" required="" placeholder="01xxxxxxxxx" dir="ltr" class="w-full bg-zinc-900/90 border border-zinc-700/80 focus:border-gold-500 rounded-xl px-4 py-3 text-sm text-white text-right placeholder-zinc-500 outline-none transition-colors">
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                        <div>
+                            <label class="block text-xs font-bold text-zinc-300 mb-2">نوع السيشن / المناسبة *</label>
+                            <select id="sessionType" class="w-full bg-zinc-900/90 border border-zinc-700/80 focus:border-gold-500 rounded-xl px-4 py-3 text-sm text-white outline-none transition-colors">
+                                <option value="حفلة زفاف (Wedding Photography)">حفلة زفاف (Wedding Photography)</option>
+                                <option value="خطوبة وكتب كتاب (Engagement)">خطوبة وكتب كتاب (Engagement)</option>
+                                <option value="فوتوسيشن عرائس (Bridal Session)">فوتوسيشن عرائس (Bridal Session)</option>
+                                <option value="معالجة ألوان سينمائية (High-End Color Grading)">معالجة ألوان سينمائية (High-End Color Grading)</option>
+                                <option value="سيشن بورتريه وفاشون">سيشن بورتريه وفاشون</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-zinc-300 mb-2">تاريخ الزفاف / السيشن</label>
+                                    <input type="date" id="sessionDate" class="w-full bg-zinc-900/90 border border-zinc-700/80 focus:border-gold-500 rounded-xl px-4 py-3 text-sm text-white outline-none transition-colors">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-bold text-zinc-300 mb-2">مكان التصوير أو تفاصيل إضافية</label>
+                                <textarea id="sessionNotes" rows="3" placeholder="اكتب أي تفاصيل تود إضافتها حول فكرة السيشن أو المكان..." class="w-full bg-zinc-900/90 border border-zinc-700/80 focus:border-gold-500 rounded-xl px-4 py-3 text-sm text-white placeholder-zinc-500 outline-none transition-colors"></textarea>
+                            </div>
+
+                            <div class="flex flex-col sm:flex-row items-center gap-3 pt-2">
+                                <button type="submit" class="w-full sm:flex-1 py-4 px-6 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-extrabold text-sm sm:text-base flex items-center justify-center gap-2.5 shadow-lg shadow-emerald-600/20 transition-all">
+                                    <i class="fa-brands fa-whatsapp text-xl"></i>
+                                    <span>إرسال الحجز عبر واتساب (01102741005)</span>
+                                </button>
+                                <a href="tel:01102741005" class="w-full sm:w-auto py-4 px-6 rounded-xl bg-zinc-800 hover:bg-zinc-700 text-gold-400 font-bold text-sm flex items-center justify-center gap-2 border border-zinc-700 transition-all" target="_blank" rel="noopener noreferrer">
+                                    <i class="fa-solid fa-phone"></i>
+                                    <span>اتصال مباشر</span>
+                                </a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="bg-obsidian border-t border-zinc-900 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+                <div class="text-center md:text-right">
+                    <div class="font-brand text-xl sm:text-2xl font-extrabold gold-gradient-text tracking-wider" dir="ltr">REDA AHMED WEDDING</div>
+                    <div class="font-editorial italic text-xs sm:text-sm text-gold-400/90 mt-0.5" dir="ltr">Wedding Photography &amp; High-End Color Grading</div>
+                    <p class="text-zinc-500 text-xs mt-1.5">جميع الحقوق محفوظة © 2026 | تصوير حفلات الزفاف ومعالجة الألوان الاحترافية</p>
+                </div>
+
+                <div class="flex items-center gap-4">
+                    <a href="tel:01102741005" class="px-4 py-2 rounded-xl bg-zinc-900 border border-zinc-800 hover:border-gold-500/50 text-zinc-200 text-sm font-bold flex items-center gap-2 transition-colors" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-solid fa-phone text-gold-400"></i>
+                        <span dir="ltr">01102741005</span>
+                    </a>
+                    <a href="https://wa.me/201102741005" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-xl bg-zinc-900 border border-zinc-800 hover:border-emerald-500 text-emerald-400 flex items-center justify-center transition-colors" title="واتساب">
+                        <i class="fa-brands fa-whatsapp text-lg"></i>
+                    </a>
+                    <a href="#sessions" class="w-10 h-10 rounded-xl bg-zinc-900 border border-zinc-800 hover:border-gold-500 text-gold-400 flex items-center justify-center transition-colors" title="ألبومات السيشنات">
+                        <i class="fa-solid fa-camera"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==================== FLOATING CONTACT WIDGET (WhatsApp & Call) ==================== -->
+    <div class="fixed bottom-5 left-5 z-40 flex flex-col gap-3">
+        <!-- Direct Phone Floating Button -->
+        <a href="tel:01102741005" class="w-13 h-13 sm:w-14 sm:h-14 rounded-full gold-btn flex items-center justify-center shadow-2xl shadow-gold-500/30 hover:scale-110 transition-transform" title="اتصل الآن: 01102741005" target="_blank" rel="noopener noreferrer">
+            <i class="fa-solid fa-phone text-lg sm:text-xl"></i>
+        </a>
+
+        <!-- WhatsApp Floating Button -->
+        <a href="https://wa.me/201102741005?text=%D8%A3%D9%87%D9%84%D8%A7%D9%8B%20REDA%20AHMED%20WEDDING%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%B3%D9%8A%D8%B4%D9%86%20%D8%AA%D8%B5%D9%88%D9%8A%D8%B1" target="_blank" rel="noopener noreferrer" class="relative animate-pulse-ring w-13 h-13 sm:w-14 sm:h-14 rounded-full bg-emerald-500 hover:bg-emerald-400 text-white flex items-center justify-center shadow-2xl shadow-emerald-500/40 hover:scale-110 transition-transform" title="تواصل واتساب: 01102741005">
+            <i class="fa-brands fa-whatsapp text-2xl sm:text-3xl"></i>
+        </a>
+    </div>
+
+    <!-- ==================== MODAL 1: SESSION GALLERY VIEWER (عرض السيشن كامل لوحده) ==================== -->
+    <div id="sessionViewerModal" class="fixed inset-0 z-50 hidden bg-black/95 backdrop-blur-xl overflow-y-auto">
+        <div class="min-h-screen max-w-6xl mx-auto px-4 sm:px-6 py-8">
+            
+            <!-- Top Sticky Bar inside Viewer -->
+            <div class="sticky top-0 z-20 flex flex-wrap items-center justify-between gap-4 bg-charcoal/95 backdrop-blur-md p-4 sm:px-6 rounded-2xl border border-zinc-800 mb-8 shadow-2xl">
+                <div>
+                    <div class="flex items-center gap-2.5">
+                        <span id="viewerCategoryBadge" class="px-3 py-0.5 rounded-full bg-gold-500/15 text-gold-400 text-xs font-bold">تصنيف</span>
+                        <span id="viewerDateLocation" class="text-xs text-zinc-400">التاريخ والمكان</span>
+                    </div>
+                    <h3 id="viewerTitle" class="text-xl sm:text-2xl font-extrabold text-white mt-1">عنوان السيشن</h3>
+                </div>
+
+                <div class="flex items-center gap-2.5">
+                    <a id="viewerWhatsappBtn" href="#" target="_blank" rel="noopener noreferrer" class="px-4 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-xs sm:text-sm font-bold flex items-center gap-2 transition-colors">
+                        <i class="fa-brands fa-whatsapp text-base"></i>
+                        <span>احجز سيشن مشابه</span>
+                    </a>
+                    <button onclick="closeSessionViewer()" class="w-10 h-10 rounded-xl bg-zinc-800 hover:bg-red-500/20 hover:text-red-400 text-zinc-300 flex items-center justify-center transition-colors" title="إغلاق">
+                        <i class="fa-solid fa-xmark text-lg"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Session Story / Description -->
+            <div class="bg-zinc-900/60 border border-zinc-800/80 rounded-2xl p-5 mb-8 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                <p id="viewerDescription" class="text-zinc-300 text-sm sm:text-base leading-relaxed"></p>
+                <span id="viewerPhotoCount" class="text-xs font-bold text-gold-400 bg-gold-500/10 px-3.5 py-2 rounded-xl shrink-0 self-start sm:self-center"></span>
+            </div>
+
+            <!-- Session Photos Grid (All photos of this single session) -->
+            <div id="viewerPhotosGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 pb-12">
+                <!-- Photos populated via JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== LIGHTBOX ZOOM & NAVIGATION FOR SINGLE PHOTO ==================== -->
+    <div id="photoLightbox" onclick="closeLightbox()" class="fixed inset-0 z-[60] hidden bg-black/95 backdrop-blur-md flex items-center justify-center p-4">
+        <button onclick="closeLightbox()" class="absolute top-5 left-5 w-11 h-11 rounded-full bg-zinc-800/90 text-white hover:bg-gold-500 hover:text-obsidian flex items-center justify-center text-xl transition-colors z-10">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <!-- Previous Photo Button (Right in RTL) -->
+        <button onclick="event.stopPropagation(); navigateLightbox(-1)" class="absolute right-4 sm:right-8 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-zinc-900/90 border border-gold-500/40 text-gold-400 hover:bg-gold-500 hover:text-obsidian flex items-center justify-center text-lg transition-all z-10" title="الصورة السابقة">
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
+
+        <div class="flex flex-col items-center max-w-full" onclick="event.stopPropagation()">
+            <img id="lightboxImage" src="" alt="صورة مكبرة" class="max-w-full max-h-[82vh] rounded-2xl shadow-2xl border border-zinc-800 object-contain">
+            <div id="lightboxCounter" class="mt-3 px-4 py-1 rounded-full bg-zinc-900/90 border border-zinc-800 text-gold-400 text-xs font-bold">1 / 1</div>
+        </div>
+
+        <!-- Next Photo Button (Left in RTL) -->
+        <button onclick="event.stopPropagation(); navigateLightbox(1)" class="absolute left-4 sm:left-8 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-zinc-900/90 border border-gold-500/40 text-gold-400 hover:bg-gold-500 hover:text-obsidian flex items-center justify-center text-lg transition-all z-10" title="الصورة التالية">
+            <i class="fa-solid fa-chevron-left"></i>
+        </button>
+    </div>
+
+    <!-- ==================== MODAL 2: STUDIO MANAGER (إدارة وإضافة السيشنات) ==================== -->
+    <div id="studioManagerModal" class="fixed inset-0 z-50 hidden bg-black/90 backdrop-blur-md overflow-y-auto">
+        <div class="min-h-screen max-w-4xl mx-auto px-4 py-8 flex items-center justify-center">
+            <div class="w-full bg-charcoal border border-zinc-800 rounded-3xl p-6 sm:p-8 shadow-2xl">
+                
+                <!-- Header -->
+                <div class="flex items-center justify-between pb-5 border-b border-zinc-800 mb-6">
+                    <div>
+                        <h3 class="text-xl sm:text-2xl font-extrabold text-white flex items-center gap-2.5">
+                            <i class="fa-solid fa-sliders text-gold-400"></i>
+                            <span>لوحة تحكم السيشنات — <span dir="ltr" class="font-brand text-gold-400">REDA AHMED WEDDING</span></span>
+                        </h3>
+                        <p class="text-xs sm:text-sm text-zinc-400 mt-1">أضف سيشنات الزفاف والخطوبة الجديدة بصورها الخاصة ليظهر كل سيشن في ألبوم مستقل</p>
+                    </div>
+                    <button onclick="closeStudioModal()" class="w-10 h-10 rounded-xl bg-zinc-800 hover:bg-zinc-700 text-zinc-300 flex items-center justify-center">
+                        <i class="fa-solid fa-xmark text-lg"></i>
+                    </button>
+                </div>
+
+                <!-- Add / Edit Session Form -->
+                <form id="sessionManagerForm" onsubmit="saveNewSession(event)" class="space-y-5 mb-8">
+                    <input type="hidden" id="editSessionId" value="">
+                    
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs font-bold text-zinc-300 mb-1.5">اسم السيشن / العروسين *</label>
+                            <input type="text" id="newSessionTitle" required="" placeholder="مثال: سيشن زفاف كريم ونور - قصر البارون" class="w-full bg-zinc-900 border border-zinc-700 focus:border-gold-500 rounded-xl px-4 py-2.5 text-sm text-white outline-none">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-zinc-300 mb-1.5">تصنيف السيشن *</label>
+                            <select id="newSessionCategory" class="w-full bg-zinc-900 border border-zinc-700 focus:border-gold-500 rounded-xl px-4 py-2.5 text-sm text-white outline-none">
+                                <option value="wedding">حفلات زفاف (Weddings)</option>
+                                <option value="engagement">خطوبة وكتب كتاب</option>
+                                <option value="bridal">فوتوسيشن عرائس (Bridal)</option>
+                                <option value="colorgrading">معالجة ألوان (High-End Color Grading)</option>
+                                <option value="portrait">بورتريه وفاشون</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs font-bold text-zinc-300 mb-1.5">المكان / التاريخ</label>
+                            <input type="text" id="newSessionMeta" placeholder="مثال: القاهرة • نوفمبر 2026" class="w-full bg-zinc-900 border border-zinc-700 focus:border-gold-500 rounded-xl px-4 py-2.5 text-sm text-white outline-none">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-zinc-300 mb-1.5">رفع صور السيشن من جهازك (متعدد)</label>
+                            <input type="file" id="newSessionFiles" accept="image/*" multiple="" onchange="handleFilesPreview(event)" class="w-full bg-zinc-900 border border-zinc-700 rounded-xl px-3 py-2 text-xs text-zinc-300 file:ml-3 file:py-1 file:px-3 file:rounded-lg file:border-0 file:text-xs file:font-bold file:bg-gold-500 file:text-obsidian cursor-pointer">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-bold text-zinc-300 mb-1.5">أو أضف روابط الصور مباشرة (رابط في كل سطر)</label>
+                        <textarea id="newSessionUrls" rows="2" placeholder="https://example.com/photo1.jpg
+https://example.com/photo2.jpg" class="w-full bg-zinc-900 border border-zinc-700 focus:border-gold-500 rounded-xl px-4 py-2.5 text-xs text-white outline-none" dir="ltr"></textarea>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-bold text-zinc-300 mb-1.5">وصف السيشن وتفاصيله</label>
+                        <textarea id="newSessionDesc" rows="2" placeholder="اكتب نبذة عن فكرة السيشن والإضاءة المستخدمة..." class="w-full bg-zinc-900 border border-zinc-700 focus:border-gold-500 rounded-xl px-4 py-2.5 text-sm text-white outline-none"></textarea>
+                    </div>
+
+                    <!-- Preview of uploaded images before saving -->
+                    <div id="uploadPreviewContainer" class="hidden grid grid-cols-4 sm:grid-cols-6 gap-2 p-3 bg-zinc-900/80 rounded-xl border border-zinc-800"></div>
+
+                    <div class="flex items-center justify-end gap-3">
+                        <button type="button" onclick="resetManagerForm()" class="px-5 py-2.5 rounded-xl bg-zinc-800 hover:bg-zinc-700 text-zinc-300 text-xs font-bold">
+                            مسح الحقول
+                        </button>
+                        <button type="submit" id="saveSessionBtn" class="gold-btn px-6 py-2.5 rounded-xl text-sm font-extrabold flex items-center gap-2">
+                            <i class="fa-solid fa-floppy-disk"></i>
+                            <span>حفظ ونشر السيشن</span>
+                        </button>
+                    </div>
+                </form>
+
+                <!-- Existing Sessions List for Quick Management -->
+                <div class="pt-5 border-t border-zinc-800">
+                    <div class="flex items-center justify-between mb-3">
+                        <h4 class="text-sm font-bold text-zinc-300">السيشنات المنشورة حالياً (<span id="manageCount">0</span>)</h4>
+                        <button onclick="restoreDefaultSessions()" class="text-xs text-zinc-500 hover:text-gold-400 underline">
+                            استعادة السيشنات الافتراضية
+                        </button>
+                    </div>
+                    <div id="manageSessionsList" class="space-y-2.5 max-h-60 overflow-y-auto pr-1">
+                        <!-- Managed sessions list -->
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== TOAST NOTIFICATION ==================== -->
+    <div id="toastNotification" class="fixed top-24 left-1/2 -translate-x-1/2 z-[70] hidden bg-zinc-900 border border-gold-500/50 text-white px-5 py-3 rounded-2xl shadow-2xl flex items-center gap-3 text-sm font-semibold">
+        <i class="fa-solid fa-circle-check text-gold-400 text-lg"></i>
+        <span id="toastMessage">تمت العملية بنجاح</span>
+    </div>
+
+    <!-- ==================== APPLICATION LOGIC ==================== -->
+    <script>
+        // Category Labels Map
+        const CATEGORY_NAMES = {
+            wedding: 'حفلات زفاف (Weddings)',
+            engagement: 'خطوبة وكتب كتاب',
+            bridal: 'فوتوسيشن عرائس (Bridal)',
+            colorgrading: 'معالجة ألوان (Color Grading)',
+            portrait: 'بورتريه وفاشون'
+        };
+
+        // Pre-loaded Professional Wedding & Editorial Sessions (Each session is a self-contained album)
+        const DEFAULT_SESSIONS = [
+            {
+                id: 'session-1',
+                title: 'سيشن زفاف ملكي — عمر & سلمى',
+                category: 'wedding',
+                meta: 'قصر محمد علي • القاهرة',
+                description: 'تغطية احترافية كاملة لسيشن الزفاف بإضاءة سينمائية دافئة تجمع بين عراقة القصور الملكية ورومانسية اللحظات العفوية.',
+                photos: [
+                    'https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1000&q=85',
+                    'https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=1000&q=85',
+                    'https://images.unsplash.com/photo-1606800052052-a08af7148866?auto=format&fit=crop&w=1000&q=85',
+                    'https://images.unsplash.com/photo-1520854221256-17451cc331bf?auto=format&fit=crop&w=1000&q=85'
+                ]
+            },
+            {
+                id: 'session-2',
+                title: 'سيشن خطوبة على النيل — طارق & مريم',
+                category: 'engagement',
+                meta: 'كورنيش النيل • الزمالك',
+                description: 'أجواء مبهجة ولقطات عفوية توثق فرحة الخطوبة وقت الغروب مع معالجة لونية احترافية تبرز تفاصيل الفرحة.',
+                photos: [
+                    'https://images.unsplash.com/photo-1522673607200-164d1b6ce486?auto=format&fit=crop&w=1000&q=85',
+                    'https://images.unsplash.com/photo-1529634806980-85c3dd6d34ac?auto=format&fit=crop&w=1000&q=85',
+                    'https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&w=1000&q=85'
+                ]
+            },
+            {
+                id: 'session-3',
+                title: 'فوتوسيشن عروس — Royal Bridal Look',
+                category: 'bridal',
+                meta: 'فندق ماريوت • القاهرة',
+                description: 'جلسة تصوير خاصة للعروس (Bridal Session) لإبراز فخامة الفستان والتفاصيل الدقيقة بإضاءة استوديو ناعمة.',
+                photos: [
+                    'https://images.unsplash.com/photo-1594552072238-b8a33785b261?auto=format&fit=crop&w=1000&q=85',
+                    'https://images.unsplash.com/photo-1537633552985-df8429e8048b?auto=format&fit=crop&w=1000&q=85',
+                    'https://images.unsplash.com/photo-1546193430-c2d207739ed7?auto=format&fit=crop&w=1000&q=85'
+                ]
+            },
+            {
+                id: 'session-4',
+                title: 'حفل زفاف مسائي — يوسف & نادين',
+                category: 'wedding',
+                meta: 'التجمع الخامس • القاهرة الجديدة',
+                description: 'تغطية شاملة لحفل الزفاف والـ First Dance بإضاءات احترافية تمنح كل صورة طابعاً سينمائياً خالداً.',
+                photos: [
+                    'https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=1000&q=85',
+                    'https://images.unsplash.com/photo-1507504031003-b417219a0fde?auto=format&fit=crop&w=1000&q=85',
+                    'https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?auto=format&fit=crop&w=1000&q=85'
+                ]
+            },
+            {
+                id: 'session-5',
+                title: 'معالجة ألوان سينمائية — High-End Color Grading',
+                category: 'colorgrading',
+                meta: 'REDA AHMED Color Lab',
+                description: 'نماذج من معالجة الألوان الاحترافية وتصحيح الإضاءة والـ Skin Tones لإخراج الصور بطابع سينمائي عالمي.',
+                photos: [
+                    'https://images.unsplash.com/photo-1525258946800-98cfd641d0de?auto=format&fit=crop&w=1000&q=85',
+                    'https://images.unsplash.com/photo-1520854221256-17451cc331bf?auto=format&fit=crop&w=1000&q=85',
+                    'https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=1000&q=85'
+                ]
+            },
+            {
+                id: 'session-6',
+                title: 'بورتريه الإضاءة الذهبية — Golden Editorial',
+                category: 'portrait',
+                meta: 'REDA AHMED WEDDING Studio',
+                description: 'جلسة تصوير بورتريه وفاشون احترافية تعتمد على توزيع الإضاءة السينمائية وإبراز ملامح الشخصية بأناقة.',
+                photos: [
+                    'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=1000&q=85',
+                    'https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?auto=format&fit=crop&w=1000&q=85',
+                    'https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=1000&q=85'
+                ]
+            }
+        ];
+
+        // Color Grading Comparison Samples
+        const GRADING_SAMPLES = [
+            'https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1200&q=90',
+            'https://images.unsplash.com/photo-1594552072238-b8a33785b261?auto=format&fit=crop&w=1200&q=90'
+        ];
+
+        // State Variables
+        let sessions = [];
+        let currentCategory = 'all';
+        let uploadedBase64Images = [];
+        let activeSessionPhotos = [];
+        let currentLightboxIndex = 0;
+
+        // Initialize App on Load
+        document.addEventListener('DOMContentLoaded', () => {
+            loadSessionsFromStorage();
+            renderSessionsGrid();
+            syncBeforeImageWidth();
+            window.addEventListener('resize', syncBeforeImageWidth);
+        });
+
+        // Interactive Color Grading Slider Functions
+        function updateComparisonSlider(val) {
+            document.getElementById('beforeClipLayer').style.width = val + '%';
+            document.getElementById('sliderDividerLine').style.left = val + '%';
+        }
+
+        function syncBeforeImageWidth() {
+            const container = document.getElementById('comparisonContainer');
+            const beforeImg = document.getElementById('beforeGradeImg');
+            if (container && beforeImg) {
+                beforeImg.style.width = container.offsetWidth + 'px';
+            }
+        }
+
+        function switchGradingSample(idx) {
+            const imgUrl = GRADING_SAMPLES[idx] || GRADING_SAMPLES[0];
+            document.getElementById('afterGradeImg').src = imgUrl;
+            document.getElementById('beforeGradeImg').src = imgUrl;
+            document.querySelectorAll('.grade-sample-btn').forEach((btn, i) => {
+                if (i === idx) {
+                    btn.className = 'grade-sample-btn px-4 py-2 rounded-xl text-xs font-bold bg-gold-500 text-obsidian transition-all';
+                } else {
+                    btn.className = 'grade-sample-btn px-4 py-2 rounded-xl text-xs font-semibold bg-zinc-900 text-zinc-300 border border-zinc-800 hover:border-gold-500/40 transition-all';
+                }
+            });
+        }
+
+        // Load from localStorage or use defaults
+        function loadSessionsFromStorage() {
+            try {
+                const saved = localStorage.getItem('reda_ahmed_wedding_sessions_v3');
+                if (saved) {
+                    sessions = JSON.parse(saved);
+                } else {
+                    sessions = [...DEFAULT_SESSIONS];
+                    saveSessionsToStorage();
+                }
+            } catch (e) {
+                sessions = [...DEFAULT_SESSIONS];
+            }
+        }
+
+        function saveSessionsToStorage() {
+            try {
+                localStorage.setItem('reda_ahmed_wedding_sessions_v3', JSON.stringify(sessions));
+            } catch (e) {
+                showToast('تنبيه: مساحة التخزين ممتلئة، يفضل استخدام روابط صور أو صور بحجم أصغر.');
+            }
+        }
+
+        // Render Sessions Grid (Each Session Card)
+        function renderSessionsGrid() {
+            const grid = document.getElementById('sessionsGrid');
+            const emptyState = document.getElementById('emptySessionsState');
+            const searchQuery = document.getElementById('sessionSearchInput').value.trim().toLowerCase();
+
+            const filtered = sessions.filter(session => {
+                const matchesCat = currentCategory === 'all' || session.category === currentCategory;
+                const matchesSearch = session.title.toLowerCase().includes(searchQuery) || 
+                                      (session.meta && session.meta.toLowerCase().includes(searchQuery)) ||
+                                      (session.description && session.description.toLowerCase().includes(searchQuery));
+                return matchesCat && matchesSearch;
+            });
+
+            grid.innerHTML = '';
+
+            if (filtered.length === 0) {
+                grid.classList.add('hidden');
+                emptyState.classList.remove('hidden');
+                return;
+            }
+
+            grid.classList.remove('hidden');
+            emptyState.classList.add('hidden');
+
+            filtered.forEach(session => {
+                const coverPhoto = session.photos && session.photos.length > 0 
+                    ? session.photos[0] 
+                    : 'https://placehold.co/800x600/18181d/d4af37?text=REDA+AHMED';
+                const photoCount = session.photos ? session.photos.length : 0;
+                const catName = CATEGORY_NAMES[session.category] || 'سيشن تصوير';
+
+                const card = document.createElement('article');
+                card.className = 'glass-card rounded-3xl overflow-hidden flex flex-col justify-between group cursor-pointer';
+                card.onclick = () => openSessionViewer(session.id);
+
+                card.innerHTML = `
+                    <div>
+                        <!-- Cover Image Container -->
+                        <div class="relative h-72 overflow-hidden bg-zinc-900">
+                            <img src="${coverPhoto}" 
+                                 alt="${session.title}" 
+                                 loading="lazy"
+                                 onerror="this.src='https://placehold.co/800x600/18181d/d4af37?text=REDA+AHMED'"
+                                 class="w-full h-full object-cover session-img-zoom">
+                            
+                            <!-- Gradient Overlay -->
+                            <div class="absolute inset-0 bg-gradient-to-t from-cardbg via-transparent to-black/40"></div>
+
+                            <!-- Top Badges -->
+                            <div class="absolute top-4 right-4 left-4 flex items-center justify-between gap-2">
+                                <span class="px-3 py-1 rounded-full bg-black/70 backdrop-blur-md border border-gold-500/30 text-gold-400 text-xs font-bold">
+                                    ${catName}
+                                </span>
+                                <span class="px-3 py-1 rounded-full bg-black/70 backdrop-blur-md text-white text-xs font-semibold flex items-center gap-1.5">
+                                    <i class="fa-regular fa-images text-gold-400"></i>
+                                    <span>${photoCount} صور</span>
+                                </span>
+                            </div>
+
+                            <!-- Hover Overlay Action -->
+                            <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                                <span class="px-5 py-2.5 rounded-full gold-btn font-extrabold text-xs shadow-xl transform translate-y-3 group-hover:translate-y-0 transition-transform flex items-center gap-2">
+                                    <i class="fa-solid fa-eye"></i>
+                                    <span>فتح ألبوم السيشن</span>
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- Session Details -->
+                        <div class="p-6">
+                            <div class="text-xs text-zinc-400 flex items-center gap-1.5 mb-2">
+                                <i class="fa-solid fa-location-dot text-gold-400"></i>
+                                <span>${session.meta || 'REDA AHMED Studio'}</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-white group-hover:text-gold-400 transition-colors line-clamp-1 mb-2">
+                                ${session.title}
+                            </h3>
+                            <p class="text-zinc-400 text-sm line-clamp-2 leading-relaxed">
+                                ${session.description || 'سيشن تصوير احترافي بعدسة رضا أحمد.'}
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Card Footer -->
+                    <div class="px-6 pb-6 pt-2 flex items-center justify-between border-t border-zinc-800/60 mt-2">
+                        <span class="text-xs font-bold text-gold-400 group-hover:underline flex items-center gap-1.5">
+                            <span>عرض السيشن كامل</span>
+                            <i class="fa-solid fa-arrow-left text-[10px]"></i>
+                        </span>
+                        <a href="https://wa.me/201102741005?text=${encodeURIComponent('أهلاً رضا أحمد، أعجبني "' + session.title + '" وأرغب في حجز سيشن مشابه')}" 
+                           target="_blank" 
+                           rel="noopener noreferrer"
+                           onclick="event.stopPropagation()"
+                           class="w-9 h-9 rounded-xl bg-emerald-500/15 hover:bg-emerald-500 text-emerald-400 hover:text-white flex items-center justify-center transition-colors"
+                           title="احجز سيشن مشابه عبر واتساب">
+                            <i class="fa-brands fa-whatsapp text-base"></i>
+                        </a>
+                    </div>
+                `;
+
+                grid.appendChild(card);
+            });
+        }
+
+        // Filter Sessions by Category
+        function filterSessions(category) {
+            currentCategory = category;
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                if (btn.dataset.cat === category) {
+                    btn.className = 'filter-btn active px-5 py-2.5 rounded-xl text-sm font-bold bg-gold-500 text-obsidian transition-all';
+                } else {
+                    btn.className = 'filter-btn px-5 py-2.5 rounded-xl text-sm font-semibold bg-zinc-900 text-zinc-300 hover:text-gold-400 border border-zinc-800 transition-all';
+                }
+            });
+            renderSessionsGrid();
+        }
+
+        // Open Individual Session Gallery Viewer
+        function openSessionViewer(sessionId) {
+            const session = sessions.find(s => s.id === sessionId);
+            if (!session) return;
+
+            document.getElementById('viewerCategoryBadge').textContent = CATEGORY_NAMES[session.category] || 'سيشن';
+            document.getElementById('viewerDateLocation').textContent = session.meta || '';
+            document.getElementById('viewerTitle').textContent = session.title;
+            document.getElementById('viewerDescription').textContent = session.description || 'تفاصيل وصور السيشن الكاملة بعدسة REDA AHMED.';
+            document.getElementById('viewerPhotoCount').textContent = `${session.photos.length} صور في هذا السيشن`;
+
+            const waMsg = `أهلاً أستاذ رضا أحمد، شاهدت ألبوم "${session.title}" على موقعك وأرغب في حجز سيشن مشابه.`;
+            document.getElementById('viewerWhatsappBtn').href = `https://wa.me/201102741005?text=${encodeURIComponent(waMsg)}`;
+
+            const photosGrid = document.getElementById('viewerPhotosGrid');
+            photosGrid.innerHTML = '';
+
+            session.photos.forEach((photoUrl, idx) => {
+                const photoItem = document.createElement('div');
+                photoItem.className = 'group relative rounded-2xl overflow-hidden bg-zinc-900 border border-zinc-800 cursor-zoom-in aspect-[4/5]';
+                photoItem.onclick = () => openLightbox(session.photos, idx);
+
+                photoItem.innerHTML = `
+                    <img src="${photoUrl}" 
+                         alt="${session.title} - صورة ${idx + 1}" 
+                         onerror="this.src='https://placehold.co/800x1000/18181d/d4af37?text=REDA+AHMED+WEDDING'"
+                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-end justify-between p-4">
+                        <span class="text-xs font-bold text-white bg-black/60 px-2.5 py-1 rounded-lg">#${idx + 1}</span>
+                        <span class="w-9 h-9 rounded-full bg-gold-500 text-obsidian flex items-center justify-center shadow-lg">
+                            <i class="fa-solid fa-magnifying-glass-plus"></i>
+                        </span>
+                    </div>
+                `;
+                photosGrid.appendChild(photoItem);
+            });
+
+            document.getElementById('sessionViewerModal').classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeSessionViewer() {
+            document.getElementById('sessionViewerModal').classList.add('hidden');
+            document.body.style.overflow = '';
+        }
+
+        // Single Photo Lightbox with Next/Prev Navigation
+        function openLightbox(photosArray, index) {
+            activeSessionPhotos = photosArray;
+            currentLightboxIndex = index;
+            updateLightboxUI();
+            document.getElementById('photoLightbox').classList.remove('hidden');
+        }
+
+        function updateLightboxUI() {
+            document.getElementById('lightboxImage').src = activeSessionPhotos[currentLightboxIndex];
+            document.getElementById('lightboxCounter').textContent = `${currentLightboxIndex + 1} / ${activeSessionPhotos.length}`;
+        }
+
+        function navigateLightbox(step) {
+            if (!activeSessionPhotos.length) return;
+            currentLightboxIndex = (currentLightboxIndex + step + activeSessionPhotos.length) % activeSessionPhotos.length;
+            updateLightboxUI();
+        }
+
+        function closeLightbox() {
+            document.getElementById('photoLightbox').classList.add('hidden');
+        }
+
+        // Keyboard Support for Lightbox
+        document.addEventListener('keydown', (e) => {
+            const lightbox = document.getElementById('photoLightbox');
+            if (!lightbox.classList.contains('hidden')) {
+                if (e.key === 'Escape') closeLightbox();
+                if (e.key === 'ArrowLeft') navigateLightbox(1);
+                if (e.key === 'ArrowRight') navigateLightbox(-1);
+            }
+        });
+
+        // ==================== STUDIO MANAGER (ADD / EDIT / DELETE SESSIONS) ====================
+        function openStudioModal() {
+            renderManageSessionsList();
+            document.getElementById('studioManagerModal').classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeStudioModal() {
+            document.getElementById('studioManagerModal').classList.add('hidden');
+            document.body.style.overflow = '';
+            resetManagerForm();
+        }
+
+        function handleFilesPreview(event) {
+            const files = Array.from(event.target.files);
+            uploadedBase64Images = [];
+            const previewContainer = document.getElementById('uploadPreviewContainer');
+            previewContainer.innerHTML = '';
+
+            if (files.length === 0) {
+                previewContainer.classList.add('hidden');
+                return;
+            }
+
+            previewContainer.classList.remove('hidden');
+
+            files.forEach(file => {
+                const reader = new FileReader();
+                reader.onload = (e) => {
+                    uploadedBase64Images.push(e.target.result);
+                    const img = document.createElement('img');
+                    img.src = e.target.result;
+                    img.className = 'w-full h-16 object-cover rounded-lg border border-gold-500/40';
+                    previewContainer.appendChild(img);
+                };
+                reader.readAsDataURL(file);
+            });
+        }
+
+        function saveNewSession(event) {
+            event.preventDefault();
+
+            const editId = document.getElementById('editSessionId').value;
+            const title = document.getElementById('newSessionTitle').value.trim();
+            const category = document.getElementById('newSessionCategory').value;
+            const meta = document.getElementById('newSessionMeta').value.trim() || 'REDA AHMED Studio';
+            const desc = document.getElementById('newSessionDesc').value.trim();
+            const rawUrls = document.getElementById('newSessionUrls').value
+                .split('\n')
+                .map(u => u.trim())
+                .filter(u => u.length > 5);
+
+            let combinedPhotos = [...uploadedBase64Images, ...rawUrls];
+
+            if (editId) {
+                const existingIdx = sessions.findIndex(s => s.id === editId);
+                if (existingIdx !== -1) {
+                    if (combinedPhotos.length === 0) {
+                        combinedPhotos = sessions[existingIdx].photos;
+                    }
+                    sessions[existingIdx] = {
+                        ...sessions[existingIdx],
+                        title,
+                        category,
+                        meta,
+                        description: desc,
+                        photos: combinedPhotos
+                    };
+                    showToast('تم تحديث بيانات السيشن بنجاح!');
+                }
+            } else {
+                if (combinedPhotos.length === 0) {
+                    combinedPhotos = [
+                        'https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=1000&q=85'
+                    ];
+                }
+
+                const newSession = {
+                    id: 'session-' + Date.now(),
+                    title,
+                    category,
+                    meta,
+                    description: desc,
+                    photos: combinedPhotos
+                };
+
+                sessions.unshift(newSession);
+                showToast('تم إضافة السيشن الجديد بنجاح!');
+            }
+
+            saveSessionsToStorage();
+            renderSessionsGrid();
+            renderManageSessionsList();
+            resetManagerForm();
+        }
+
+        function editSessionItem(sessionId) {
+            const session = sessions.find(s => s.id === sessionId);
+            if (!session) return;
+
+            document.getElementById('editSessionId').value = session.id;
+            document.getElementById('newSessionTitle').value = session.title;
+            document.getElementById('newSessionCategory').value = session.category;
+            document.getElementById('newSessionMeta').value = session.meta || '';
+            document.getElementById('newSessionDesc').value = session.description || '';
+            
+            const urlOnly = session.photos.filter(p => p.startsWith('http'));
+            document.getElementById('newSessionUrls').value = urlOnly.join('\n');
+            
+            document.getElementById('saveSessionBtn').innerHTML = '<i class="fa-solid fa-check"></i><span>حفظ التعديلات</span>';
+        }
+
+        function deleteSessionItem(sessionId) {
+            sessions = sessions.filter(s => s.id !== sessionId);
+            saveSessionsToStorage();
+            renderSessionsGrid();
+            renderManageSessionsList();
+            showToast('تم حذف السيشن.');
+        }
+
+        function restoreDefaultSessions() {
+            sessions = [...DEFAULT_SESSIONS];
+            saveSessionsToStorage();
+            renderSessionsGrid();
+            renderManageSessionsList();
+            showToast('تمت استعادة السيشنات الافتراضية بنجاح.');
+        }
+
+        function resetManagerForm() {
+            document.getElementById('sessionManagerForm').reset();
+            document.getElementById('editSessionId').value = '';
+            uploadedBase64Images = [];
+            const previewContainer = document.getElementById('uploadPreviewContainer');
+            previewContainer.innerHTML = '';
+            previewContainer.classList.add('hidden');
+            document.getElementById('saveSessionBtn').innerHTML = '<i class="fa-solid fa-floppy-disk"></i><span>حفظ ونشر السيشن</span>';
+        }
+
+        function renderManageSessionsList() {
+            const listEl = document.getElementById('manageSessionsList');
+            document.getElementById('manageCount').textContent = sessions.length;
+            listEl.innerHTML = '';
+
+            sessions.forEach(s => {
+                const row = document.createElement('div');
+                row.className = 'flex items-center justify-between gap-3 bg-zinc-900/90 p-3 rounded-xl border border-zinc-800';
+                row.innerHTML = `
+                    <div class="flex items-center gap-3 min-w-0">
+                        <img src="${s.photos[0] || ''}" onerror="this.src='https://placehold.co/100x100/18181d/d4af37?text=RA'" class="w-11 h-11 rounded-lg object-cover shrink-0">
+                        <div class="min-w-0">
+                            <div class="text-sm font-bold text-white truncate">${s.title}</div>
+                            <div class="text-xs text-zinc-400">${CATEGORY_NAMES[s.category] || ''} • ${s.photos.length} صور</div>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-2 shrink-0">
+                        <button type="button" onclick="editSessionItem('${s.id}')" class="px-3 py-1.5 rounded-lg bg-zinc-800 hover:bg-gold-500 hover:text-obsidian text-gold-400 text-xs font-bold transition-colors">
+                            تعديل
+                        </button>
+                        <button type="button" onclick="deleteSessionItem('${s.id}')" class="px-3 py-1.5 rounded-lg bg-red-500/10 hover:bg-red-500 text-red-400 hover:text-white text-xs font-bold transition-colors">
+                            حذف
+                        </button>
+                    </div>
+                `;
+                listEl.appendChild(row);
+            });
+        }
+
+        // ==================== CONTACT & BOOKING HELPERS ====================
+        function handleBookingSubmit(event) {
+            event.preventDefault();
+            const name = document.getElementById('clientName').value.trim();
+            const phone = document.getElementById('clientPhone').value.trim();
+            const type = document.getElementById('sessionType').value;
+            const date = document.getElementById('sessionDate').value;
+            const notes = document.getElementById('sessionNotes').value.trim();
+
+            let message = `أهلاً REDA AHMED WEDDING، أرغب في حجز سيشن تصوير احترافي:\n`;
+            message += `• الاسم: ${name}\n`;
+            message += `• رقم الهاتف: ${phone}\n`;
+            message += `• نوع السيشن / المناسبة: ${type}\n`;
+            if (date) message += `• التاريخ المقترح: ${date}\n`;
+            if (notes) message += `• تفاصيل إضافية: ${notes}\n`;
+
+            const whatsappUrl = `https://wa.me/201102741005?text=${encodeURIComponent(message)}`;
+            showToast('جاري تحويلك إلى واتساب لإرسال تفاصيل الحجز...');
+            window.open(whatsappUrl, '_blank');
+        }
+
+        function downloadStandaloneWebsite() {
+            const htmlContent = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+            const blob = new Blob([htmlContent], { type: 'text/html;charset=utf-8' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'index.html';
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+            showToast('تم تحميل ملف الموقع (index.html) بنجاح!');
+        }
+
+        function quickBookPackage(packageName) {
+            const selectEl = document.getElementById('sessionType');
+            const notesEl = document.getElementById('sessionNotes');
+            notesEl.value = `أرغب في الاستفسار عن تفاصيل وحجز: ${packageName}`;
+            document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+            showToast(`تم اختيار "${packageName}" — أكمل بياناتك للحجز`);
+        }
+
+        function copyPhoneNumber() {
+            const tempInput = document.createElement('input');
+            tempInput.value = '01102741005';
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempInput);
+            showToast('تم نسخ الرقم 01102741005 بنجاح!');
+        }
+
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('hidden');
+        }
+
+        function showToast(msg) {
+            const toast = document.getElementById('toastNotification');
+            document.getElementById('toastMessage').textContent = msg;
+            toast.classList.remove('hidden');
+            clearTimeout(window.toastTimer);
+            window.toastTimer = setTimeout(() => {
+                toast.classList.add('hidden');
+            }, 3500);
+        }
+    </script>
+
+</body></html>
